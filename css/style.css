@@ -19,6 +19,7 @@
   --font-content: "Archivo", sans-serif;
   --font-notes: "Red Hat Display", sans-serif;
   --font-buttons: "Red Hat Display", sans-serif;
+  --fontawesome: "Font Awesome 5 Pro";
 }
 
 h1,
@@ -173,6 +174,117 @@ footer {
           box-sizing: border-box;
 }
 
+footer .col_nav h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blanco);
+  position: relative;
+}
+
+footer .col_nav h6.active_nav::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+footer .col_nav h6::before {
+  content: '\f105';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: var(--fontawesome);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  display: none;
+}
+
+footer .col_nav .cont_footer_redes h6 {
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+footer .col_nav .cont_footer_redes .links_redes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 40px;
+  padding: 0;
+}
+
+footer .col_nav .cont_footer_redes .links_redes ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+footer .col_nav .cont_footer_redes a i {
+  color: var(--color-pri-2) !important;
+  font-size: 18px;
+}
+
+#link_f3::before {
+  display: none;
+}
+
+.nav_consultaG ul {
+  padding: 0;
+  list-style: none;
+}
+
+.nav_consultaG ul li a {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 0px 0;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  color: var(--blanco);
+  font-size: 12px;
+}
+
+.nav_consultaG ul li a:hover {
+  color: var(--color-pri-2);
+}
+
+.cont_footer_contacto ul {
+  padding: 0;
+  list-style: none;
+}
+
+.cont_footer_contacto ul li {
+  color: var(--blanco);
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+.cont_footer_contacto ul li a {
+  display: inline-block;
+  margin-left: 5px;
+  color: var(--blanco);
+  font-size: 12px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.cont_footer_contacto ul li a:hover {
+  color: var(--color-pri-2);
+}
+
 .cont_footer {
   display: -ms-grid;
   display: grid;
@@ -218,6 +330,7 @@ footer {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  opacity: 0.8;
 }
 
 .subfooter {
@@ -234,6 +347,74 @@ footer {
   }
   .button_nav {
     display: block;
+  }
+  .cont_footer {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .col_nav h6::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer {
+    padding: 60px 0px 30px;
+  }
+  .cont_footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .cont_footer .col2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .cont_footer .col1 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cont_footer .col1 summary {
+    max-width: initial;
+    text-align: center;
+  }
+  .cont_footer .col2 .col_nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.164);
+  }
+  .nav_consultaG ul {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  #link_f3 {
+    text-align: center;
+  }
+  .cont_footer_contacto ul li {
+    text-align: center;
+  }
+  .cont_footer_redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.164);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  }
+  .subfooter {
+    margin-top: 0;
+    border-top: 0;
+  }
+  footer .col_nav .cont_footer_redes .links_redes ul li {
+    margin-bottom: 0;
+  }
+  .nav_consultaG {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

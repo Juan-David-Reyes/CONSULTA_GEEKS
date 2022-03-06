@@ -34,6 +34,7 @@
     --font-content: "Archivo", sans-serif;
     --font-notes: "Red Hat Display", sans-serif;
     --font-buttons: "Red Hat Display", sans-serif;
+    --fontawesome: "Font Awesome 5 Pro";
 }
 
 h1,
@@ -150,7 +151,108 @@ footer{
     position: relative;
     padding: 60px 60px 30px;
     box-sizing: border-box;
+    .col_nav{
+        h6{
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--blanco);
+            position: relative;
+            &.active_nav{
+                &::before{
+                    transform: rotate(90deg);
+                }
+            }
+            &::before{
+                content: '\f105';
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                font-family: var(--fontawesome);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 300ms ease-out;
+                display: none;
+            }
+        }
+        .cont_footer_redes{
+            h6{
+                text-decoration: underline;
+                font-size: 12px;
+                font-weight: 400;
+                margin: 0;
+            }
+            .links_redes{
+                ul{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 40px;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            a{
+                i{
+                    color: var(--color-pri-2)!important;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
+#link_f3{
+    &::before{
+        display: none;
+    }
+}
+.nav_consultaG{
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            a{
+                display: inline-block;
+                margin: 0 0 8px;
+                padding: 0px 0;
+                transition: 300ms ease;
+                color: var(--blanco);
+                font-size: 12px;
+                &:hover{
+                    color: var(--color-pri-2);
+                }
+            }
+        }
+    }
+}
+.cont_footer_contacto{
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            color: var(--blanco);
+            font-size: 12px;
+            margin: 0 0 12px;
+            a{
+                display: inline-block;
+                margin-left: 5px;
+                color: var(--blanco);
+                font-size: 12px;
+                transition: 300ms ease;
+                &:hover{
+                    color: var(--color-pri-2);
+                }
+            }
+        }
+    }
+}
+
 .cont_footer{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -178,6 +280,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+        opacity: 0.8;
     }
 }
 .subfooter{
@@ -201,8 +304,63 @@ footer{
     .button_nav{
         display: block;
     }
+    .cont_footer{
+        gap: 50px;
+    }
 }
 @media screen and (max-width:768px){
+    footer .col_nav h6{
+        &::before{
+            display: flex;
+        }
+    }
+    footer{
+        padding: 60px 0px 30px;
+    }
+    .cont_footer{
+        grid-template-columns: 1fr;
+    }
+    .cont_footer .col2{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .cont_footer .col1{
+        align-items: center;
+    }
+    .cont_footer .col1 summary{
+        max-width: initial;
+        text-align: center;
+    }
+    .cont_footer .col2 .col_nav{
+        border-top: 1px solid rgba(255, 255, 255, 0.164);
+    }
+    .nav_consultaG ul{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    #link_f3{
+        text-align: center;
+    }
+    .cont_footer_contacto ul li{
+        text-align: center;
+    }
+    .cont_footer_redes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.164);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+    }
+    .subfooter{
+        margin-top: 0;
+        border-top: 0;
+    }
+    footer .col_nav .cont_footer_redes .links_redes ul li{
+        margin-bottom: 0;
+    }
+    .nav_consultaG{
+        display: none;
+    }
     
 }
 @media screen and (max-width:480px){
