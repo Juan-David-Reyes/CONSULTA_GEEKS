@@ -18,6 +18,15 @@ $(document).ready(function(){
         $(this).toggleClass('active_nav');
     });
 
+    // BORDER FOOTER COLOR ARREGLO
+
+    function colorFooter(){
+      if($(".iniciar_sesion").is(":visible")){
+          $('body').css('background-color', '#FAFAFA') ;
+      }
+    }
+
+
     // SLIDER HOME HERO
 
     function HomeHero(){
@@ -64,8 +73,9 @@ $(document).ready(function(){
          });
      }
 
+    colorFooter();
 
     HomeHero();
-     homeComoFunciona();
+    homeComoFunciona();
 
 });

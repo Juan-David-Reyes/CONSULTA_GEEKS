@@ -225,6 +225,13 @@ footer{
         }
     }
 }
+.link{
+    color: var(--color-pri-2);
+    transition: 300ms ease;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 #link_f3{
     &::before{
         display: none;
@@ -647,7 +654,189 @@ footer{
     }
 }
 
+input[type="checkbox"]{
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background: var(--blanco);
+    position: relative;
+    cursor: pointer;
+    border: 1px solid var(--gris-100);
+    padding: 2px;
+    box-sizing: border-box;
+    &:checked{
+        background: var(--bg-button) url('../images/diseno/01-home/check-solid.svg') no-repeat center;
+        border: 1px solid var(--color-pri-2);
+    }
+}
 
+// ESTILOS LOGIN - INICIAR
+
+.iniciar_sesion{
+    background: #FAFAFA;
+    padding: 30px 0px 100px;
+    box-sizing: border-box;
+    
+}
+
+.cont_gen_iniciar_s{
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > a{
+        margin-bottom: 20px;
+    }
+    .login{
+        background: #FFFFFF;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 16px;
+        width: 100%;
+        overflow: hidden;
+        h4{
+            margin: 30px 0;
+            text-align: center;
+            font-size: 24px;
+            color: var(--negro-100);
+        }
+    }
+    .cont_inputs{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 50px 30px;
+        box-sizing: border-box;
+        gap: 10px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            background-color: #717171;
+            bottom: 25px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            opacity: 20%;
+        }
+        &::after{
+            content: 'O';
+            position: absolute;
+            width: 20%;
+            height: 1px;
+            background-color: #FFFFFF;
+            bottom: 25px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input[type="text"], input[type="email"], input[type="password"]{
+            background: var(--blanco);
+            border: 1px solid #ECECEC;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            height: 48px;
+            outline: 0;
+        }
+        a{
+            text-align: right;
+            font-size: 10px;
+        }
+    }
+}
+    
+.cont_login_redes{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.cont_registrate{
+    width: 100%;
+    padding: 28px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+    background: #f8f8f8;
+}
+
+.btn_login{
+    width: 100%;
+    max-width: 336px;
+    text-align: center;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin: 0;
+    span{
+        color: var(--blanco);
+    }
+    &.facebook{
+        background: #23589C;
+    }
+    &.google{
+        background: #FD4D3E;
+    }
+}
+
+.btn_submit{
+    appearance: none;
+    background: #23D9B7;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 336px;
+    margin: 20px auto;
+    border: 0;
+    outline: 0;
+    color: var(--blanco);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+.cont_tyc{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    label{
+        font-size: 11px;
+        color: var(--gris-100);
+        max-width: 335px;
+        a{
+            font-size: 11px;
+            text-decoration: underline;
+            color: var(--negro-100);
+            transition: 300ms ease;
+            &:hover{
+                color: var(--color-pri-2);
+            }
+        }
+    }
+    input{
+        align-self: baseline;
+    }
+}
 
 // RESPONSIVE
 
