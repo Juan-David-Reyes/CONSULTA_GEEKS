@@ -725,8 +725,47 @@ footer .col_nav .cont_footer_redes a i {
   text-align: left;
 }
 
+.s_nuestros_geeks {
+  width: 100%;
+  background: url("../images/diseno/02-nuestros-geeks/bg_header.png") no-repeat right center;
+  background-size: contain;
+  max-height: 247px;
+  height: 100vh;
+  background-color: #ECEFF6;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s_nuestros_geeks::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, color-stop(56.31%, #ECEFF6), to(rgba(236, 239, 246, 0)));
+  background: linear-gradient(90deg, #ECEFF6 56.31%, rgba(236, 239, 246, 0) 100%);
+}
+
 .s_nuestros_geeks .cont_tit2_s {
   max-width: 756px;
+}
+
+.header_geeks {
+  height: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.header_geeks h1 {
+  text-align: left;
 }
 
 .geeks_cards {
@@ -862,7 +901,7 @@ input[type="checkbox"]:checked {
   margin-bottom: 20px;
 }
 
-.cont_gen_iniciar_s .login {
+.cont_gen_iniciar_s .login, .cont_gen_iniciar_s .cont_confirmar {
   background: #FFFFFF;
   border: 1px solid #ECECEC;
   -webkit-box-sizing: border-box;
@@ -872,7 +911,7 @@ input[type="checkbox"]:checked {
   overflow: hidden;
 }
 
-.cont_gen_iniciar_s .login h4 {
+.cont_gen_iniciar_s .login h4, .cont_gen_iniciar_s .cont_confirmar h4 {
   margin: 30px 0;
   text-align: center;
   font-size: 24px;
@@ -1054,6 +1093,80 @@ input[type="checkbox"]:checked {
 .cont_tyc input {
   -ms-flex-item-align: baseline;
       align-self: baseline;
+}
+
+.spacer {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.cont_confirmar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_confirmar a.btn_submit {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cont_desc_confirmar {
+  text-align: center;
+  padding: 0 40px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s_confirma_correo {
+  margin: 60px 0;
+}
+
+.card_tecnicos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_tecnicos .card_geek {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.tecnicos_v {
+  margin-bottom: 100px;
+}
+
+.cont_filter_geeks {
+  padding: 16px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cont_filter_geeks .cont_filter_hero {
+  max-width: 866px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1050px) {
