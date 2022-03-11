@@ -1169,6 +1169,56 @@ input[type="checkbox"]:checked {
   margin: auto;
 }
 
+.s_sobre_nosotros {
+  position: relative;
+  max-height: 768px;
+  height: 100vh;
+  border-radius: 0 0 200px 0;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s_sobre_nosotros:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, color-stop(56.31%, #ECEFF6), to(rgba(236, 239, 246, 0)));
+  background: linear-gradient(90deg, #ECEFF6 56.31%, rgba(236, 239, 246, 0) 100%);
+  z-index: 1;
+}
+
+.s_sobre_nosotros .cont_tit2_s {
+  z-index: 5;
+  position: relative;
+}
+
+.s_sobre_nosotros picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.s_sobre_nosotros picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right;
+     object-position: right;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);

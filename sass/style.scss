@@ -911,6 +911,45 @@ input[type="checkbox"]{
         margin: auto;
     }
 }
+.s_sobre_nosotros{
+    position: relative;
+    max-height: 768px;
+    height: 100vh;
+    border-radius: 0 0 200px 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right:0;
+        top:0;
+        bottom: 0;
+        margin: auto;
+        background: linear-gradient(90deg, #ECEFF6 56.31%, rgba(236, 239, 246, 0) 100%);
+        z-index: 1;
+    }
+    .cont_tit2_s{
+        z-index: 5;
+        position: relative;
+    }
+    picture{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: right;
+        }
+    }
+}
+
 
 // RESPONSIVE
 
