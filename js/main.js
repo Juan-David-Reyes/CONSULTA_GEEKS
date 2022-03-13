@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+    // ACTIVAR FILTRO MOBILE
+    $('.filter_slide').click(function(){
+      $('.swiper-pagination').fadeToggle();
+      $('.cont_filter_hero').toggleClass('activeFilterMobile');
+  });
+    
+
     // MENU MOBILE
 
     $('.button_nav').click(function(){
