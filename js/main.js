@@ -1,10 +1,16 @@
 $(document).ready(function(){
 
+/*   MENU PERFIL */
+
+    $('.link_user_p').click(function(){
+      $('.cont_submenu_user').slideToggle();
+    });
+
     // ACTIVAR FILTRO MOBILE
     $('.filter_slide').click(function(){
-      $('.swiper-pagination').fadeToggle();
-      $('.cont_filter_hero').toggleClass('activeFilterMobile');
-  });
+        $('.swiper-pagination').fadeToggle();
+        $('.cont_filter_hero').toggleClass('activeFilterMobile');
+    });
     
 
     // MENU MOBILE

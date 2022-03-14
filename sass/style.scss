@@ -125,7 +125,6 @@ header{
 .navbar{
     transition: 300ms ease;
     height: 100%;
-    background-color: var(--blanco);
     ul{
         display: flex;
         justify-content: flex-end;
@@ -143,6 +142,76 @@ header{
             justify-content: center;
             gap: 10px;
             align-items: center;
+        }
+    }
+    &.profile{
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            display: flex;
+        }
+    }
+}
+.profile li:nth-child(3){
+    span{
+        transition: 300ms ease;
+        &:hover{
+            color: var(--bg-button);
+        }
+    }
+}
+.profile li:last-child{
+    position: relative;
+    .link_user_p{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        img{
+            border-radius: 100px;
+            object-fit: cover;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.cont_submenu_user{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: max-content;
+    min-width: 160px;
+    background: var(--blanco);
+    border-radius: 8px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.07));
+    overflow: hidden;
+    ul{
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:0;
+        li{
+            width: 100%;
+            border-bottom: 1px solid rgb(233, 233, 233);
+            &:last-child{
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+        a{
+            padding: 10px 20px;
+            box-sizing: border-box;
+            width: 100%;
+            display: inline-block;
+            transition: 300ms ease;
+            &:hover{
+                background-color: #f1f1f1;
+            }
         }
     }
 }
@@ -1298,7 +1367,6 @@ input[type="checkbox"]{
 .cont_filter_hero.activeFilterMobile > button{
     display: none;
 }
-// RESPONSIVE
 .cont_btns_filter_mobile{
     display: none;
     align-items: baseline;
@@ -1308,6 +1376,29 @@ input[type="checkbox"]{
         align-items: center;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// RESPONSIVE
+
+
 @media screen and (max-width:1200px){
     
 }
@@ -1348,11 +1439,13 @@ input[type="checkbox"]{
             order: 2;
             width: 100%;
             box-sizing: border-box;
-            padding: 0 20px;    
+            padding: 0 20px;
+            display: inline-flex;   
             a{
                 font-size: 16px;
-                text-align: left;
+                text-align: center;
                 width: 100%;
+                text-align: center;
             }
         }
     }
@@ -1361,6 +1454,7 @@ input[type="checkbox"]{
         display: inline-flex;
         padding: 20px 0px;
         box-sizing: border-box;
+        text-align: center;
     }
     
     .navbar ul .navbar_buttons{
@@ -1376,6 +1470,35 @@ input[type="checkbox"]{
     .homeHero_swiper .cont_gendest_home .cont_col_desthome h2{
         font-size: 54px;
     }
+
+    .navbar.profile{
+        .mobile{
+            display: flex;
+            li:first-child{
+                padding: 0;
+                a{
+                    padding: 0 20px 20px;
+                    box-sizing: border-box;
+                    justify-content: flex-start;
+                    gap: 20px;
+                }
+            }
+            a{
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+            }
+            .link_user_p{
+                display: flex;
+                align-items: center;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .desktop{
+            display: none;
+        }
+    }
 }
 @media screen and (max-width:768px){
     footer .col_nav h6{
@@ -1387,6 +1510,7 @@ input[type="checkbox"]{
         }
     }
     footer{
+        border-radius: 0;
         padding: 60px 0px 30px;
     }
     .cont_footer{

@@ -143,7 +143,6 @@ header h1 a {
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   height: 100%;
-  background-color: var(--blanco);
 }
 
 .navbar ul {
@@ -176,6 +175,103 @@ header h1 a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar.profile .mobile {
+  display: none;
+}
+
+.navbar.profile .desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile li:nth-child(3) span {
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.profile li:nth-child(3) span:hover {
+  color: var(--bg-button);
+}
+
+.profile li:last-child {
+  position: relative;
+}
+
+.profile li:last-child .link_user_p {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.profile li:last-child .link_user_p img {
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.cont_submenu_user {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 160px;
+  background: var(--blanco);
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.07));
+          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.07));
+  overflow: hidden;
+}
+
+.cont_submenu_user ul {
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.cont_submenu_user ul li {
+  width: 100%;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.cont_submenu_user ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cont_submenu_user ul a {
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.cont_submenu_user ul a:hover {
+  background-color: #f1f1f1;
 }
 
 .button_nav {
@@ -1762,11 +1858,15 @@ input[type="checkbox"]:checked {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .navbar ul li a {
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    text-align: center;
   }
   .navbar ul > li a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.158);
@@ -1776,6 +1876,7 @@ input[type="checkbox"]:checked {
     padding: 20px 0px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    text-align: center;
   }
   .navbar ul .navbar_buttons {
     -webkit-box-ordinal-group: 2;
@@ -1794,6 +1895,48 @@ input[type="checkbox"]:checked {
   .homeHero_swiper .cont_gendest_home .cont_col_desthome h2 {
     font-size: 54px;
   }
+  .navbar.profile .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar.profile .mobile li:first-child {
+    padding: 0;
+  }
+  .navbar.profile .mobile li:first-child a {
+    padding: 0 20px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 20px;
+  }
+  .navbar.profile .mobile a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar.profile .mobile .link_user_p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .navbar.profile .desktop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1808,6 +1951,7 @@ input[type="checkbox"]:checked {
     display: flex;
   }
   footer {
+    border-radius: 0;
     padding: 60px 0px 30px;
   }
   .cont_footer {
