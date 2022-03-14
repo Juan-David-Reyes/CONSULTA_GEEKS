@@ -1377,7 +1377,95 @@ input[type="checkbox"]{
     }
 }
 
-
+.s_mi_perfil{
+    max-width: 856px;
+    margin: 40px auto;
+    h1{
+        color: var(--negro-100);
+        font-size: 2em;
+    }
+}
+.cont_gen_mi_perfil{
+    background: var(--blanco);
+    border: 1px solid var(--gris-20);
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+    margin-bottom: 80px;
+    .cont_confirmar .btn_submit{
+        margin-bottom:10px;
+    }
+    picture{
+        width: 112px;
+        height: 112px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid #EDEDED;
+            border-radius: 16px;
+        }
+        span{
+            position: absolute;
+            border-radius: 2px;
+            background: var(--blanco);
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            box-sizing: border-box;
+            right: -10px;
+            bottom: -10px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+            transition: 300ms ease;
+            &:hover{
+                color: var(--color-pri-2);
+            }
+        }
+    }
+    .cont_info_perfil{
+        width: 100%;
+        h3{
+            font-size: 1.5em;
+            color: var(--negro-100);
+            border-bottom: 1px solid rgb(238, 238, 238);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .inputs_info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            .input_info_c{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                label{
+                    font-size: 12px;
+                    color: var(--gris-100);
+                }
+                input{
+                    width: 100%;
+                    border: 1px solid #ECECEC;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    padding: 10px;
+                    outline: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 
 
 

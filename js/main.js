@@ -34,7 +34,7 @@ $(document).ready(function(){
     // BORDER FOOTER COLOR ARREGLO
 
     function colorFooter(){
-      if($(".iniciar_sesion").is(":visible")){
+      if($(".iniciar_sesion, .s_mi_perfil").is(":visible")){
           $('body').css('background-color', '#FAFAFA') ;
       }
     }
