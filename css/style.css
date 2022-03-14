@@ -1930,6 +1930,10 @@ input[type="checkbox"]:checked {
   font-size: 14px;
 }
 
+.mod_header_blog {
+  max-height: 660px;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
