@@ -1562,6 +1562,7 @@ input[type="checkbox"]{
     .navbar.profile{
         .mobile{
             display: flex;
+            padding: 0;
             li:first-child{
                 padding: 0;
                 a{
@@ -1713,6 +1714,9 @@ input[type="checkbox"]{
     .cont_btns_filter_mobile{
         display: flex;
     }
+    .cont_gen_mi_perfil .cont_info_perfil .inputs_info{
+        gap:14px;
+    }
 }
 @media screen and (max-width:480px){
     .homeHero_swiper .cont_gendest_home .cont_col_desthome .desc_home_hero{
@@ -1761,5 +1765,17 @@ input[type="checkbox"]{
     }
     .homeHero_swiper .swiper-horizontal > .swiper-pagination-bullets, .homeHero_swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .homeHero_swiper .swiper-pagination-custom, .homeHero_swiper .swiper-pagination-fraction{
         bottom: 30px;
+    }
+    .cont_gen_mi_perfil .cont_info_perfil .inputs_info{
+        grid-template-columns: 1fr;
+    }
+    .cont_gen_mi_perfil .cont_info_perfil h3{
+        font-size: 20px;
+    }
+    .s_mi_perfil h1{
+        font-size: 24px;
+    }
+    .cont_gen_mi_perfil .cont_confirmar .btn_submit{
+        padding: 13px 20px;
     }
 }
