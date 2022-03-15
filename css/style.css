@@ -89,6 +89,20 @@ a {
   font-weight: 700;
 }
 
+.btn_leer_mas {
+  color: var(--txt_button-outline);
+  text-decoration: none;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn_leer_mas:hover {
+  text-decoration: underline;
+}
+
 .center {
   width: 100%;
   max-width: 1312px;
@@ -162,6 +176,7 @@ header h1 a {
 
 .navbar ul li a {
   font-size: 14px;
+  height: 38px;
 }
 
 .navbar ul .navbar_buttons {
@@ -175,6 +190,31 @@ header h1 a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar ul .navbar_buttons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar ul .navbar_buttons li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 115px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar.profile .mobile {
@@ -996,6 +1036,7 @@ input[type="checkbox"] {
           appearance: none;
   width: 14px;
   height: 14px;
+  min-width: 14px;
   border-radius: 4px;
   background: var(--blanco);
   position: relative;
@@ -1009,6 +1050,11 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   background: var(--bg-button) url("../images/diseno/01-home/check-solid.svg") no-repeat center;
   border: 1px solid var(--color-pri-2);
+}
+
+.bg_full {
+  background: #F6F8F9;
+  width: 100%;
 }
 
 .iniciar_sesion {
@@ -1934,6 +1980,38 @@ input[type="checkbox"]:checked {
   max-height: 660px;
 }
 
+.s_nuestro_enfoque {
+  padding: 100px 0 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cta_nota {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta_nota a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--bg-button);
+  color: var(--blanco);
+  font-weight: 700;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
@@ -2282,6 +2360,9 @@ input[type="checkbox"]:checked {
   }
   .cont_gen_mi_perfil .cont_confirmar .btn_submit {
     padding: 13px 20px;
+  }
+  .cont_gen_iniciar_s .cont_inputs {
+    padding: 0 20px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

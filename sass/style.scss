@@ -90,7 +90,17 @@ a {
     font-family: var(--font-buttons);
     font-weight: 700;
 }
-
+.btn_leer_mas{
+    color: var(--txt_button-outline);
+    text-decoration: none;
+    transition: 300ms ease;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 .center{
     width: 100%;
     max-width: 1312px;
@@ -135,6 +145,7 @@ header{
         li{
             a{
                 font-size: 14px;
+                height: 38px;
             }
         }
         .navbar_buttons{
@@ -142,6 +153,18 @@ header{
             justify-content: center;
             gap: 10px;
             align-items: center;
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    min-width: 115px;
+                    justify-content: center;
+                }
+            }
         }
     }
     &.profile{
@@ -782,6 +805,7 @@ input[type="checkbox"]{
     appearance: none;
     width: 14px;
     height: 14px;
+    min-width: 14px;
     border-radius: 4px;
     background: var(--blanco);
     position: relative;
@@ -793,6 +817,11 @@ input[type="checkbox"]{
         background: var(--bg-button) url('../images/diseno/01-home/check-solid.svg') no-repeat center;
         border: 1px solid var(--color-pri-2);
     }
+}
+
+.bg_full{
+    background: #F6F8F9;
+    width: 100%;
 }
 
 // ESTILOS LOGIN - INICIAR
@@ -1472,10 +1501,28 @@ input[type="checkbox"]{
 }
 
 
+// ESTILOS SOBRE NOSOTROS
 
+.s_nuestro_enfoque{
+    padding: 100px 0 40px;
+    box-sizing: border-box;
+}
 
-
-
+.cta_nota{
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    a{
+        width: max-content;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        background-color: var(--bg-button);
+        color: var(--blanco);
+        font-weight: 700;
+        border-radius: 8px;
+    }
+}
 
 
 
@@ -1780,5 +1827,8 @@ input[type="checkbox"]{
     }
     .cont_gen_mi_perfil .cont_confirmar .btn_submit{
         padding: 13px 20px;
+    }
+    .cont_gen_iniciar_s .cont_inputs{
+        padding: 0 20px 30px;
     }
 }
