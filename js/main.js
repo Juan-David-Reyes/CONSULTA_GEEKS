@@ -8,9 +8,12 @@ $(document).ready(function(){
 
     // ACTIVAR FILTRO MOBILE
     $('.filter_slide').click(function(){
-        $('.swiper-pagination').fadeToggle();
-        $('.cont_filter_hero').toggleClass('activeFilterMobile');
+
+        $('.cont_filter_hero.solo_mobile').toggleClass('activeFilterMobile');
     });
+    $('.close_filter_m').click(function(){
+      $('.cont_filter_hero.solo_mobile').removeClass('activeFilterMobile');
+  }); 
     
 
     // MENU MOBILE

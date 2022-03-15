@@ -2012,6 +2012,105 @@ input[type="checkbox"]:checked {
   border-radius: 8px;
 }
 
+.cont_filter_hero.solo_mobile {
+  position: fixed;
+  height: 90%;
+  z-index: 100;
+  top: 30px;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  padding: 0 0 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.cont_filter_hero.solo_mobile .tags_filter {
+  padding: 10px 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.cont_filter_hero.solo_mobile .tags_filter .tag_f {
+  padding: 8px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+  background-color: #ECECEC;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.cont_filter_hero.solo_mobile div {
+  padding: 20px 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_filter_hero.solo_mobile .heading_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 24px;
+  color: var(--gris-100);
+  font-weight: 700;
+}
+
+.cont_filter_hero.solo_mobile .heading_txt .close_filter_m {
+  font-size: 20px;
+}
+
+.cont_filter_hero.solo_mobile .campo_filtro {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ECECEC;
+  padding: 0 20px 20px;
+}
+
+.cont_filter_hero.solo_mobile .campo_filtro label {
+  color: var(--negro-100);
+  font-size: 12px;
+}
+
+.cont_filter_hero.solo_mobile .campo_filtro input {
+  height: 44px;
+  border: 1px solid #ECECEC;
+  font-size: 14px;
+  color: var(--gris-100);
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_filter_hero.solo_mobile .cont_btns_filter_mobile button {
+  height: 44px;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
@@ -2035,6 +2134,7 @@ input[type="checkbox"]:checked {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-top: 0;
   }
   .button_nav {
     display: -webkit-box;
@@ -2065,7 +2165,7 @@ input[type="checkbox"]:checked {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 10px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -2081,10 +2181,13 @@ input[type="checkbox"]:checked {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    padding: 20px 0px;
+    padding: 28px 0px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar ul .navbar_buttons {
     -webkit-box-ordinal-group: 2;
@@ -2257,6 +2360,9 @@ input[type="checkbox"]:checked {
   .cont_sobre_nosotros {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    border-radius: 0;
+    padding-bottom: 120px;
+    border-radius: 0;
   }
   .s_sobre_nosotros picture {
     -webkit-box-ordinal-group: 3;
@@ -2264,7 +2370,7 @@ input[type="checkbox"]:checked {
             order: 2;
   }
   .s_nuestros_geeks {
-    padding: 100px 0;
+    padding: 0 0 100px;
   }
   .cont_filter_hero {
     position: fixed;
@@ -2294,8 +2400,15 @@ input[type="checkbox"]:checked {
     display: -ms-flexbox;
     display: flex;
   }
+  .cont_btns_filter_mobile .btn_outline {
+    background: none;
+    border: 1px solid var(--color-pri-2);
+  }
   .cont_gen_mi_perfil .cont_info_perfil .inputs_info {
     gap: 14px;
+  }
+  footer .cont_footer_redes h6::before {
+    display: none;
   }
 }
 
@@ -2324,7 +2437,12 @@ input[type="checkbox"]:checked {
     line-height: 33px;
   }
   .s_nuestros_geeks {
-    padding: 60px 0;
+    padding: 0 0 60px;
+  }
+  .cont_sobre_nosotros picture::before {
+    right: 0;
+    width: 202px;
+    height: 64px;
   }
   .s_banner_empieza .cont_banner_empieza:before {
     border-radius: 72px 0px 33px;
