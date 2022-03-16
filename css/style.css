@@ -1747,6 +1747,8 @@ input[type="checkbox"]:checked {
   gap: 25px;
   max-width: 1080px;
   margin: auto;
+  position: relative;
+  z-index: 3;
 }
 
 .cont_blog .card_b {
@@ -1756,6 +1758,17 @@ input[type="checkbox"]:checked {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 16px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.cont_blog .card_b:hover {
+  -webkit-box-shadow: 0px 14px 21px -7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 14px 21px -7px rgba(0, 0, 0, 0.15);
+}
+
+.cont_blog .card_b:hover .b_desc_txt .tit_card_blog {
+  color: var(--txt_button-outline);
 }
 
 .cont_blog .card_b picture {
@@ -1805,6 +1818,13 @@ input[type="checkbox"]:checked {
   color: var(--gris-100);
   font-size: 14px;
   line-height: 178%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .cont_mobile_home_filter {
@@ -2255,6 +2275,112 @@ input[type="checkbox"]:checked {
       grid-template-columns: 1fr 1fr;
 }
 
+.s_notes {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.s_notes::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 648px;
+  width: 100%;
+  max-width: 485px;
+  background: #F6F8F9;
+  z-index: 1;
+}
+
+.cont_nota_pri {
+  margin: 0 auto 120px;
+  max-width: 1080px;
+  position: relative;
+  z-index: 10;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.cont_nota_pri > a {
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 489px;
+  max-height: 517px;
+  width: 100%;
+  height: 100vh;
+}
+
+.cont_nota_pri > a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.b_desc_txt .tit_card_blog {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--negro-100);
+  margin-bottom: 20px;
+  display: inline-block;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.b_desc_txt .tit_card_blog:hover {
+  color: var(--txt_button-outline);
+}
+
+.b_desc_txt .date_blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.b_desc_txt .date_blog i {
+  font-weight: 400;
+  color: var(--color-pri-2);
+}
+
+.b_desc_txt .txt_card_blog {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--negro-100);
+  margin-bottom: 20px;
+}
+
+.int_blog {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.int_blog picture {
+  height: 264px;
+  width: 100%;
+}
+
+.int_blog picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
@@ -2558,6 +2684,29 @@ input[type="checkbox"]:checked {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .cont_nota_pri {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto 80px;
+  }
+  .cont_nota_pri > a {
+    max-width: initial;
+    max-height: 250px;
+  }
+  .mod_header_blog {
+    min-height: 447px;
+  }
+  .s_sobre_nosotros picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .s_sobre_nosotros.mod_header_blog {
+    border-radius: 0;
+  }
+  .s_sobre_nosotros.mod_header_blog:before {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(29.92%, #ffffff66), color-stop(127.75%, #ffffff));
+    background: linear-gradient(0deg, #ffffff66 29.92%, #ffffff 127.75%);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2635,6 +2784,22 @@ input[type="checkbox"]:checked {
   }
   .s_banner_empieza .cont_banner_empieza picture::before {
     right: 0;
+  }
+  .header_nota h1 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+  .txt_nota h2 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .txt_nota h3 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .txt_nota q {
+    margin: 0 0 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

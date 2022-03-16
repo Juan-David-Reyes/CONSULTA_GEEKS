@@ -1329,12 +1329,21 @@ input[type="checkbox"]{
     gap: 25px;
     max-width: 1080px;
     margin: auto;
+    position: relative;
+    z-index: 3;
     .card_b{
         overflow: hidden;
         background: var(--blanco);
         border: 1px solid #ECECEC;
         box-sizing: border-box;
         border-radius: 16px;
+        transition: 300ms ease;
+        &:hover{
+            box-shadow: 0px 14px 21px -7px rgba(0, 0, 0, 0.15);
+            .b_desc_txt .tit_card_blog{
+                color: var(--txt_button-outline);
+            }
+        }
         picture{
             position: relative;
             max-height: 178px;
@@ -1369,6 +1378,12 @@ input[type="checkbox"]{
                 color: var(--gris-100);
                 font-size: 14px;
                 line-height: 178%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* number of lines to show */
+                        line-clamp: 3; 
+                -webkit-box-orient: vertical;
             }
         }
     }
@@ -1705,6 +1720,91 @@ input[type="checkbox"]{
     grid-template-columns: 1fr 1fr;
 }
 
+.s_notes{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 648px;
+        width: 100%;
+        max-width: 485px;
+        background: #F6F8F9;
+        z-index: 1;
+    }
+}
+
+.cont_nota_pri{
+    margin: 0 auto 120px;
+    max-width: 1080px;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    > a{
+        border-radius: 8px;
+        overflow: hidden;
+        display: inline-block;
+        max-width: 489px;
+        max-height: 517px;
+        width: 100%;
+        height: 100vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.b_desc_txt{
+    .tit_card_blog{
+        font-size: 2em;
+        font-weight: 700;
+        color: var(--negro-100);
+        margin-bottom: 20px;
+        display: inline-block;
+        transition: 300ms ease;
+        &:hover{
+            color: var(--txt_button-outline);
+        }
+    }
+    .date_blog{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        margin-bottom: 0px;
+        i{
+            font-weight: 400;
+            color: var(--color-pri-2);
+        }
+    }
+    .txt_card_blog{
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--negro-100);
+        margin-bottom: 20px;
+    }
+}
+.int_blog{
+    grid-template-columns: 1fr 1fr;
+    picture{
+        height: 264px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 
 
 
@@ -1958,6 +2058,26 @@ input[type="checkbox"]{
     .notas_relacionadas .cont_blog{
         grid-template-columns: 1fr;
     }
+    .cont_nota_pri{
+        grid-template-columns: 1fr;
+        margin: 0 auto 80px;
+    }
+    .cont_nota_pri > a{
+        max-width: initial;
+        max-height: 250px;
+    }
+    .mod_header_blog{
+        min-height: 447px;
+    }
+    .s_sobre_nosotros picture img{
+        object-fit: cover;
+    }
+    .s_sobre_nosotros.mod_header_blog{
+        border-radius: 0;
+    }
+    .s_sobre_nosotros.mod_header_blog:before{
+        background: linear-gradient(0deg, #ffffff66 29.92%, #ffffff 127.75%);
+    }
 }
 @media screen and (max-width:480px){
     .homeHero_swiper .cont_gendest_home .cont_col_desthome .desc_home_hero{
@@ -2032,5 +2152,21 @@ input[type="checkbox"]{
     }
     .s_banner_empieza .cont_banner_empieza picture::before{
         right: 0;
+    }
+    .header_nota h1{
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 0;
+    }
+    .txt_nota h2{
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .txt_nota h3{
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .txt_nota q{
+        margin: 0 0 20px;
     }
 }
