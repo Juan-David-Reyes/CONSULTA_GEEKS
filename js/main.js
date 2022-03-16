@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     $('.link_user_p').click(function(){
       $('.cont_submenu_user').slideToggle();
+      $('body').toggleClass('hiddeScroll');
     });
 
     // ACTIVAR FILTRO MOBILE
@@ -20,6 +21,7 @@ $(document).ready(function(){
 
     $('.button_nav').click(function(){
         $('nav.navbar').toggleClass('active');
+        $('body').toggleClass('hiddeScroll');
         $('.button_nav .fas').toggleClass('fa-times');
     });
 
