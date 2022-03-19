@@ -2644,6 +2644,73 @@ input[type="checkbox"]:checked {
   text-decoration: underline;
 }
 
+.s_gracias {
+  background-color: #FAFAFA;
+  padding: 200px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_gen_gracias {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #D0D0D0;
+  border-radius: 4px;
+  background-color: var(--blanco);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cont_gen_gracias .desc_gracias {
+  text-align: center;
+}
+
+.cont_gen_gracias .desc_gracias h1 {
+  color: var(--negro-100);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.cont_gen_gracias .desc_gracias h4 {
+  font-size: 20px;
+  color: var(--gris-100);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.cont_gen_gracias .desc_gracias .btn_fill {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  height: 56px;
+  margin-top: 40px;
+  letter-spacing: 0.08em;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
@@ -2970,6 +3037,9 @@ input[type="checkbox"]:checked {
     background: -webkit-gradient(linear, left bottom, left top, color-stop(29.92%, #ffffff66), color-stop(127.75%, #ffffff));
     background: linear-gradient(0deg, #ffffff66 29.92%, #ffffff 127.75%);
   }
+  .s_gracias {
+    padding: 100px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -3063,6 +3133,15 @@ input[type="checkbox"]:checked {
   }
   .txt_nota q {
     margin: 0 0 20px;
+  }
+  .cont_gen_gracias .desc_gracias h1 {
+    font-size: 36px;
+  }
+  .cont_gen_gracias .desc_gracias h4 {
+    font-size: 16px;
+  }
+  .s_gracias {
+    padding: 70px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

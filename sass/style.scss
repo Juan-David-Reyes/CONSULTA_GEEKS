@@ -2006,6 +2006,54 @@ input[type="checkbox"]{
     }
 }
 
+.s_gracias{
+    background-color: #FAFAFA;
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+
+.cont_gen_gracias{
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .desc_gracias{
+        text-align: center;
+        h1{
+            color: var(--negro-100);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+        }
+        h4{
+            font-size: 20px;
+            color: var(--gris-100);
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .btn_fill{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            height: 56px;
+            margin-top: 40px;
+            letter-spacing: 0.08em;
+        }
+
+    }
+}
+
+
 
 
 
@@ -2279,6 +2327,9 @@ input[type="checkbox"]{
     .s_sobre_nosotros.mod_header_blog:before{
         background: linear-gradient(0deg, #ffffff66 29.92%, #ffffff 127.75%);
     }
+    .s_gracias{
+        padding: 100px 0; 
+    }
 }
 @media screen and (max-width:480px){
     .homeHero_swiper .cont_gendest_home .cont_col_desthome .desc_home_hero{
@@ -2369,5 +2420,14 @@ input[type="checkbox"]{
     }
     .txt_nota q{
         margin: 0 0 20px;
+    }
+    .cont_gen_gracias .desc_gracias h1{
+        font-size: 36px;
+    }
+    .cont_gen_gracias .desc_gracias h4{
+        font-size: 16px;
+    }
+    .s_gracias{
+        padding: 70px 0; 
     }
 }
