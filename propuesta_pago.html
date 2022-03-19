@@ -14,50 +14,93 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header2">
         <div class="center">
-            <div class="header">
-                <h1>
-                    <a href="index.html">
-                        <img src="images/diseno/logo_consulta_geeks.svg" width="135" height="48" alt="">
-                    </a>
-                </h1>
-                <nav class="navbar">
-                    <ul>
-                        <li>
-                            <a href="sobre_nosotros.html">¿Quiénes Somos?</a>
-                        </li>
-                        <li>
-                            <a href="">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="nuestros_geeks.html">Nuestros Geeks</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-                        <div class="navbar_buttons">
-                            <li>
-                                <a class="btn_outline" href="registro.html">Regístrate</a>
-                            </li>
-                            <li>
-                                <a class="btn_fill" href="iniciar_sesion.html">Iniciar Sesión</a>
-                            </li>
-                        </div>
-                    </ul>
-                </nav>
-                <a class="button_nav">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
+            <a href="index.html">
+                <img width="135" height="48" src="images/diseno/logo_consulta_geeks.svg" alt="">
+            </a>
         </div>
     </header>
 
     <main>
+
+        <div class="spacer"></div>
+        <section class="s_pago">
+            <div class="center">
+                <div class="cont_gen_pago">
+                    <h1>Realizar depósito de garantia</h1>
+                    <div class="cont_advertencia">
+                        <span class="fas fa-alert"></span>
+                        <div class="txt_advert">Tus pagos se realizarán con Mercado Pago para mayor eficiencia y seguridad en tu transacción dentro de nuestra plataforma, puedes hacer tus depósitos con tarjetas de créditos y débito.</div>
+                    </div>
+
+                    <div class="lista_pagos_img">
+                        <img height="24" src="images/diseno/08-pago/mercado.svg" alt="">
+                        <img height="24" src="images/diseno/08-pago/visa.svg" alt="">
+                        <img height="24" src="images/diseno/08-pago/mastercard.svg" alt="">
+                        <img height="24" src="images/diseno/08-pago/2.svg" alt="">
+                        <img height="24" src="images/diseno/08-pago/amex.svg" alt="">
+                        <img height="24" src="images/diseno/08-pago/1.svg" alt="">
+                    </div>
+
+                    <div class="cont_gen_pasarela">
+                        <form class="col_datos_pago">
+                            <div class="cont_inputs">
+                                <input type="text" autocomplete="off" placeholder="Nombre y apellido">
+                                <input type="email" placeholder="Correo eletrónico">
+                                <div class="doble_input">
+                                    <select name="" id="">
+                                        <option selected disabled value="">---</option>
+                                        <option value="">RUT</option>
+                                        <option value="">NIT</option>
+                                        <option value="">CC</option>
+                                        <option value="">CE</option>
+                                    </select>
+                                    <input type="number">
+                                </div>
+                                <div class="cont_input_card">
+                                    <img width="38" height="24" src="images/diseno/08-pago/mastercard.svg" alt="">
+                                    <input type="number" class="n_card_16" placeholder="0000 0000 0000 0000">
+                                    <input type="number" class="n_card_month" placeholder="MM">
+                                    <input type="number" class="n_card_year" placeholder="AA">
+                                    <input type="number" class="n_card_3" placeholder="CVC">
+                                </div>
     
+                                <button type="submit" class="btn_submit">Hacer depósito</button>
+
+                                <div class="info_protect"> <span class="fas fa-lock"></span> Compra protegida por Mercado Pago</div>
+                            </div>
+                        </form>
+                        <div class="resumen_pago">
+                            <h3>Resumen de compra</h3>
+                            <div class="desc_txt_compra">
+                                <span>Descripción</span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sagittis cras netus turpis eget. Tincidunt turpis nunc mauris massa tempor blandit ullamcorper lectus.
+                            </div>
+                            <div class="cont_cantidad_pago">
+                                <div class="item_pago">
+                                    <span>Cantidad</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="item_pago">
+                                    <span>Precio UND</span>
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                            <div class="cont_total_pago">
+                                <div class="item_pago">
+                                    <span>Total a pagar</span>
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
-    <footer>
+    <footer class="footer2">
 
         <!-- SCRIPTS -->
 
@@ -68,88 +111,7 @@
         <!-- --------------- -->
 
         <div class="center">
-            <div class="cont_footer">
-                <div class="col1">
-                    <picture>
-                        <img src="images/diseno/logo_consulta_geeks_dark.svg" width="113" height="40" alt="">
-                    </picture>
-                    <summary>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus non nulla aliquet luctus. Sed ullamcorper ex sed ipsum vehicula, non vulputate mauris finibus.
-                    </summary>
-                </div>
-                <div class="col2">
-                    <div class="col_nav">
-                        <h6 id="link_f1">ConsultaGeeks</h6>
-                        <nav class="nav_consultaG">
-                            <ul>
-                                <li>
-                                    <a href="">¿Quiénes somos?</a>
-                                </li>
-                                <li>
-                                    <a href="">Servicios</a>
-                                </li>
-                                <li>
-                                    <a href="">Nuestros Geeks</a>
-                                </li>
-                                <li>
-                                    <a href="">Blog</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col_nav">
-                        <h6 id="link_f2">Legal</h6>
-                        <nav class="nav_consultaG">
-                            <ul>
-                                <li>
-                                    <a href="">Políticas de privacidad</a>
-                                </li>
-                                <li>
-                                    <a href="">Términos y condiciones</a>
-                                </li>
-                                <li>
-                                    <a href="">Políticas de ConsultaGeeks</a>
-                                </li>
-                                <li>
-                                    <a href="">Cookies</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col_nav">
-                        <h6 id="link_f3">Contacto</h6>
-                        <div class="cont_footer_contacto">
-                            <ul>
-                                <li>
-                                    Teléfono:<a href="tel:(51) 963 852 765">(51) 963 852 765</a>
-                                </li>
-                                <li>
-                                    Email:<a href="mailto:info@consultageeks.com">info@consultageeks.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="cont_footer_redes">
-                            <h6>Siguenos</h6>
-                            <div class="links_redes">
-                                <ul>
-                                    <li>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="fab fa-youtube"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="subfooter">
-                Consulta Geeks © 2020 - Todos los derechos reservados.
-            </div>
+            <h6>Consulta Geeks © 2020 - Todos los derechos reservados.</h6>
         </div>
 
     </footer>

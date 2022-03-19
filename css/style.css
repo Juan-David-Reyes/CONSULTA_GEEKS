@@ -532,6 +532,23 @@ footer .col_nav .cont_footer_redes a i {
   margin-top: 30px;
 }
 
+div.dataTables_wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.flx_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .swiper {
   width: 100%;
   height: 100%;

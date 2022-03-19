@@ -410,6 +410,17 @@ footer{
     margin-top: 30px;
 }
 
+div.dataTables_wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.flx_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 // ESTILOS BASICOS SWIPER SLIDER
 
 .swiper {

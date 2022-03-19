@@ -22,28 +22,63 @@
                         <img src="images/diseno/logo_consulta_geeks.svg" width="135" height="48" alt="">
                     </a>
                 </h1>
-                <nav class="navbar">
-                    <ul>
+                <nav class="navbar profile">
+                    <ul class="mobile">
                         <li>
-                            <a href="sobre_nosotros.html">¿Quiénes Somos?</a>
+                            <a class="link_user_p">
+                                <img width="40" height="40" src="images/diseno/01-home/foto_geek.png" alt=""> Carlos G.
+                            </a>
                         </li>
                         <li>
-                            <a href="">Servicios</a>
+                            <a href="mensajes.html">Notificaciones <span class="fas fa-bell"></span> </a>
                         </li>
                         <li>
-                            <a href="nuestros_geeks.html">Nuestros Geeks</a>
+                            <a href="mi_perfil.html">Mi Perfil<span class="fas fa-chevron-right"></span> </a>
                         </li>
                         <li>
-                            <a href="blog.html">Blog</a>
+                            <a href="mensajes.html">Mensajes<span class="fas fa-chevron-right"></span> </a>
                         </li>
-                        <div class="navbar_buttons">
-                            <li>
-                                <a class="btn_outline" href="registro.html">Regístrate</a>
-                            </li>
-                            <li>
-                                <a class="btn_fill" href="iniciar_sesion.html">Iniciar Sesión</a>
-                            </li>
-                        </div>
+                        <li>
+                            <a href="historial.html">Historial de solicitudes<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="propuestas.html">Propuestas<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Cerrar sesión<span class="fas fa-arrow-right"></span> </a>
+                        </li>
+                    </ul>
+                    <ul class="desktop">
+                        <li>
+                            <a href="sesion_activa.html">Encontrar Geeks</a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Mensajes</a>
+                        </li>
+                        <li>
+                            <a href=""> <span class="fas fa-bell"></span> </a>
+                        </li>
+                        <li>
+                            <a class="link_user_p">
+                                <img width="40" height="40" src="images/diseno/01-home/foto_geek.png" alt=""> Carlos G. <span class="fas fa-chevron-down"></span>
+                            </a>
+                            <div class="cont_submenu_user">
+                                <ul>
+                                    <li>
+                                        <a href="mi_perfil.html">Mi perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="historial.html">Historial de solicitud</a>
+                                    </li>
+                                    <li>
+                                        <a href="propuestas.html">Propuestas</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <a class="button_nav">
@@ -54,10 +89,84 @@
     </header>
 
     <main>
-    
+        <section class="s_mensajes">
+            <div class="center">
+                <div class="cont_gen_mensajes">
+                    <div class="col_sms_contactos">
+                        <h4>Todos los mensajes</h4>
+                        <input type="search" placeholder="Buscar mensaje...">
+                        <div class="cont_gen_contactos">
+                            <div class="contacto_user selected">
+                                <picture>
+                                    <img width="50" height="50" src="" alt="">
+                                </picture>
+                                <div class="nombre_contact">
+                                    <div>Carlos G.</div>
+                                    <span>Sed placerat quam ultrices...</span>
+                                </div>
+                                <div class="fecha_contacto">
+                                    25/08/2010
+                                </div>
+                            </div>
+                            <div class="contacto_user">
+                                <picture>
+                                    <img width="50" height="50" src="" alt="">
+                                </picture>
+                                <div class="nombre_contact">
+                                    <div>Carlos G.</div>
+                                    <span>Sed placerat quam ultrices...</span>
+                                </div>
+                                <div class="fecha_contacto">
+                                    25/08/2010
+                                </div>
+                            </div>
+                            <div class="contacto_user">
+                                <picture>
+                                    <img width="50" height="50" src="" alt="">
+                                </picture>
+                                <div class="nombre_contact">
+                                    <div>Carlos G.</div>
+                                    <span>Sed placerat quam ultrices...</span>
+                                </div>
+                                <div class="fecha_contacto">
+                                    25/08/2010
+                                </div>
+                            </div>
+                            <div class="contacto_user">
+                                <picture>
+                                    <img width="50" height="50" src="" alt="">
+                                </picture>
+                                <div class="nombre_contact">
+                                    <div>Carlos G.</div>
+                                    <span>Sed placerat quam ultrices...</span>
+                                </div>
+                                <div class="fecha_contacto">
+                                    25/08/2010
+                                </div>
+                            </div>
+                            <div class="contacto_user">
+                                <picture>
+                                    <img width="50" height="50" src="" alt="">
+                                </picture>
+                                <div class="nombre_contact">
+                                    <div>Carlos G.</div>
+                                    <span>Sed placerat quam ultrices...</span>
+                                </div>
+                                <div class="fecha_contacto">
+                                    25/08/2010
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_sms_chat">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
-    <footer>
+    <footer class="no_footer">z
 
         <!-- SCRIPTS -->
 
@@ -67,90 +176,7 @@
 
         <!-- --------------- -->
 
-        <div class="center">
-            <div class="cont_footer">
-                <div class="col1">
-                    <picture>
-                        <img src="images/diseno/logo_consulta_geeks_dark.svg" width="113" height="40" alt="">
-                    </picture>
-                    <summary>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus non nulla aliquet luctus. Sed ullamcorper ex sed ipsum vehicula, non vulputate mauris finibus.
-                    </summary>
-                </div>
-                <div class="col2">
-                    <div class="col_nav">
-                        <h6 id="link_f1">ConsultaGeeks</h6>
-                        <nav class="nav_consultaG">
-                            <ul>
-                                <li>
-                                    <a href="">¿Quiénes somos?</a>
-                                </li>
-                                <li>
-                                    <a href="">Servicios</a>
-                                </li>
-                                <li>
-                                    <a href="">Nuestros Geeks</a>
-                                </li>
-                                <li>
-                                    <a href="">Blog</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col_nav">
-                        <h6 id="link_f2">Legal</h6>
-                        <nav class="nav_consultaG">
-                            <ul>
-                                <li>
-                                    <a href="">Políticas de privacidad</a>
-                                </li>
-                                <li>
-                                    <a href="">Términos y condiciones</a>
-                                </li>
-                                <li>
-                                    <a href="">Políticas de ConsultaGeeks</a>
-                                </li>
-                                <li>
-                                    <a href="">Cookies</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col_nav">
-                        <h6 id="link_f3">Contacto</h6>
-                        <div class="cont_footer_contacto">
-                            <ul>
-                                <li>
-                                    Teléfono:<a href="tel:(51) 963 852 765">(51) 963 852 765</a>
-                                </li>
-                                <li>
-                                    Email:<a href="mailto:info@consultageeks.com">info@consultageeks.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="cont_footer_redes">
-                            <h6>Siguenos</h6>
-                            <div class="links_redes">
-                                <ul>
-                                    <li>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="fab fa-youtube"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="subfooter">
-                Consulta Geeks © 2020 - Todos los derechos reservados.
-            </div>
-        </div>
+        
 
     </footer>
 </body>
