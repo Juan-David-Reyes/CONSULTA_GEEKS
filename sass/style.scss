@@ -3483,6 +3483,9 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     .s_modal_propuesta .cont_modal_propuesta .desc_modal{
         grid-template-columns: 1fr
     }
+    .cont_perfil_aceptar .header_info_card_p{
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (max-width:480px){
     .homeHero_swiper .cont_gendest_home .cont_col_desthome .desc_home_hero{

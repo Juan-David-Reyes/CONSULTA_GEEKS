@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULTA GEEK</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="header">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/diseno/logo_consulta_geeks.svg" width="135" height="48" alt="">
+                    </a>
+                </h1>
+                <nav class="navbar profile">
+                    <ul class="mobile">
+                        <li>
+                            <a class="link_user_p">
+                                <img width="40" height="40" src="images/diseno/01-home/foto_geek.png" alt=""> Carlos G.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Notificaciones <span class="fas fa-bell"></span> </a>
+                        </li>
+                        <li>
+                            <a href="mi_perfil.html">Mi Perfil<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Mensajes<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="historial.html">Historial de solicitudes<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="propuestas.html">Propuestas<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Cerrar sesión<span class="fas fa-arrow-right"></span> </a>
+                        </li>
+                    </ul>
+                    <ul class="desktop">
+                        <li>
+                            <a href="sesion_activa.html">Encontrar Geeks</a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Mensajes  <span class="fas fa-bell"></span></a>
+                        </li>
+                        <li>
+                            <a class="link_user_p">
+                                <img width="40" height="40" src="images/diseno/01-home/foto_geek.png" alt=""> Carlos G. <span class="fas fa-chevron-down"></span>
+                            </a>
+                            <div class="cont_submenu_user">
+                                <ul>
+                                    <li>
+                                        <a href="mi_perfil.html">Mi perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="historial.html">Historial de solicitud</a>
+                                    </li>
+                                    <li>
+                                        <a href="propuestas.html">Propuestas</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="button_nav">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="spacer"></div>
+
+        <section class="s_historial">
+            <div class="center">
+                <div class="cont_gen_historial">
+                    <div class="tit_historial">
+                        <h1>Historial de solicitudes</h1>
+                        <select name="" id="">
+                            <option selected disabled value="">Todas las solicitudes</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="cont_historiales">
+                        <div class="tit_historiales">
+                            <div>FECHA</div>
+                            <div>DESCRIPCIÓN</div>
+                            <div>PRECIO</div>
+                            <div>ESTADO</div>
+                            <div>ACCIÓN</div>
+                        </div>
+
+                        <div class="item_historial">
+                            <div class="v_desk">
+                                <div class="item_h_date">
+                                    01/02/20
+                                </div>
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                <div class="item_h_precio">
+                                    $20
+                                </div>
+                                <div class="item_h_estado finalizado">
+                                    FINALIZADO
+                                </div>
+                                <div class="item_h_accion">
+                                    <select name="" id="">
+                                        <option selected disabled hidden value="">ACCIÓN</option>
+                                        <option value="">Liberar Fondos</option>
+                                        <option value="">Solicitar Mediación</option>
+                                        <option value="">Enviar mensaje</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="v_mobile">
+                                
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                
+                                <div class="item_h_estado">
+                                    <div class="finalizado">
+                                        FINALIZADO
+                                    </div>
+                                    <span class="fas fa-chevron-up"></span>
+                                </div>
+                                <div class="slide_down_info">
+                                    <div class="item_h_precio">
+                                        <span>PRECIO</span>
+                                        $20
+                                    </div>
+                                    <div class="item_h_date">
+                                        <span>FECHA</span>
+                                        01/02/20
+                                    </div>
+                                    <div class="item_h_accion">
+                                        <a href="" class="liberar_fondos">Liberar Fondos</a>
+                                        <a href="" class="btn_solicitar_m">Solicitar Mediación</a>
+                                        <a href="" class="btn_icon_sms">
+                                            <span class="fas fa-comment-alt-dots"></span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item_historial">
+                            <div class="v_desk">
+                                <div class="item_h_date">
+                                    01/02/20
+                                </div>
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                <div class="item_h_precio">
+                                    $20
+                                </div>
+                                <div class="item_h_estado progreso">
+                                    EN PROGRESO
+                                </div>
+                                <div class="item_h_accion">
+                                    <select name="" id="">
+                                        <option selected disabled hidden value="">ACCIÓN</option>
+                                        <option value="">Liberar Fondos</option>
+                                        <option value="">Solicitar Mediación</option>
+                                        <option value="">Enviar mensaje</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="v_mobile">
+                                
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                
+                                <div class="item_h_estado">
+                                    <div class="progreso">
+                                        EN PROGRESO
+                                    </div>
+                                    <span class="fas fa-chevron-up"></span>
+                                </div>
+                                <div class="slide_down_info">
+                                    <div class="item_h_precio">
+                                        <span>PRECIO</span>
+                                        $20
+                                    </div>
+                                    <div class="item_h_date">
+                                        <span>FECHA</span>
+                                        01/02/20
+                                    </div>
+                                    <div class="item_h_accion">
+                                        <a href="" class="liberar_fondos">Liberar Fondos</a>
+                                        <a href="" class="btn_solicitar_m">Solicitar Mediación</a>
+                                        <a href="" class="btn_icon_sms">
+                                            <span class="fas fa-comment-alt-dots"></span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item_historial">
+                            <div class="v_desk">
+                                <div class="item_h_date">
+                                    01/02/20
+                                </div>
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                <div class="item_h_precio">
+                                    $20
+                                </div>
+                                <div class="item_h_estado rechazado">
+                                    RECHAZADO
+                                </div>
+                                <div class="item_h_accion">
+                                    <select name="" id="">
+                                        <option selected disabled hidden value="">ACCIÓN</option>
+                                        <option value="">Liberar Fondos</option>
+                                        <option value="">Solicitar Mediación</option>
+                                        <option value="">Enviar mensaje</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="v_mobile">
+                                
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                
+                                <div class="item_h_estado">
+                                    <div class="rechazado">
+                                        RECHAZADO
+                                    </div>
+                                    <span class="fas fa-chevron-up"></span>
+                                </div>
+                                <div class="slide_down_info">
+                                    <div class="item_h_precio">
+                                        <span>PRECIO</span>
+                                        $20
+                                    </div>
+                                    <div class="item_h_date">
+                                        <span>FECHA</span>
+                                        01/02/20
+                                    </div>
+                                    <div class="item_h_accion">
+                                        <a href="" class="liberar_fondos">Liberar Fondos</a>
+                                        <a href="" class="btn_solicitar_m">Solicitar Mediación</a>
+                                        <a href="" class="btn_icon_sms">
+                                            <span class="fas fa-comment-alt-dots"></span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item_historial">
+                            <div class="v_desk">
+                                <div class="item_h_date">
+                                    01/02/20
+                                </div>
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                <div class="item_h_precio">
+                                    $20
+                                </div>
+                                <div class="item_h_estado mediacion">
+                                    MEDIACIÓN
+                                </div>
+                                <div class="item_h_accion">
+                                    <select name="" id="">
+                                        <option selected disabled hidden value="">ACCIÓN</option>
+                                        <option value="">Liberar Fondos</option>
+                                        <option value="">Solicitar Mediación</option>
+                                        <option value="">Enviar mensaje</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="v_mobile">
+                                
+                                <div class="item_h_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.
+                                </div>
+                                
+                                <div class="item_h_estado">
+                                    <div class="mediacion">
+                                        MEDIACIÓN
+                                    </div>
+                                    <span class="fas fa-chevron-up"></span>
+                                </div>
+                                <div class="slide_down_info">
+                                    <div class="item_h_precio">
+                                        <span>PRECIO</span>
+                                        $20
+                                    </div>
+                                    <div class="item_h_date">
+                                        <span>FECHA</span>
+                                        01/02/20
+                                    </div>
+                                    <div class="item_h_accion">
+                                        <a href="" class="liberar_fondos">Liberar Fondos</a>
+                                        <a href="" class="btn_solicitar_m">Solicitar Mediación</a>
+                                        <a href="" class="btn_icon_sms">
+                                            <span class="fas fa-comment-alt-dots"></span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+
+        <!-- SCRIPTS -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- --------------- -->
+
+        <div class="center">
+            <div class="cont_footer">
+                <div class="col1">
+                    <picture>
+                        <img src="images/diseno/logo_consulta_geeks_dark.svg" width="113" height="40" alt="">
+                    </picture>
+                    <summary>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus non nulla aliquet luctus. Sed ullamcorper ex sed ipsum vehicula, non vulputate mauris finibus.
+                    </summary>
+                </div>
+                <div class="col2">
+                    <div class="col_nav">
+                        <h6 id="link_f1">ConsultaGeeks</h6>
+                        <nav class="nav_consultaG">
+                            <ul>
+                                <li>
+                                    <a href="">¿Quiénes somos?</a>
+                                </li>
+                                <li>
+                                    <a href="">Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="">Nuestros Geeks</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col_nav">
+                        <h6 id="link_f2">Legal</h6>
+                        <nav class="nav_consultaG">
+                            <ul>
+                                <li>
+                                    <a href="">Políticas de privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="">Políticas de ConsultaGeeks</a>
+                                </li>
+                                <li>
+                                    <a href="">Cookies</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col_nav">
+                        <h6 id="link_f3">Contacto</h6>
+                        <div class="cont_footer_contacto">
+                            <ul>
+                                <li>
+                                    Teléfono:<a href="tel:(51) 963 852 765">(51) 963 852 765</a>
+                                </li>
+                                <li>
+                                    Email:<a href="mailto:info@consultageeks.com">info@consultageeks.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont_footer_redes">
+                            <h6>Siguenos</h6>
+                            <div class="links_redes">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                Consulta Geeks © 2020 - Todos los derechos reservados.
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

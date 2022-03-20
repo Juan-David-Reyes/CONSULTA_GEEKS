@@ -4589,6 +4589,10 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .cont_perfil_aceptar .header_info_card_p {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 480px) {
