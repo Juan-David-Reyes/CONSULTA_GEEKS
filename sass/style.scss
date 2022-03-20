@@ -3486,6 +3486,13 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     .cont_perfil_aceptar .header_info_card_p{
         grid-template-columns: 1fr;
     }
+    .header_geeks h1{
+        font-size: 23px;
+    }
+    .s_nuestros_geeks{
+        background-size: cover;
+        padding: 100px 0;
+    }
 }
 @media screen and (max-width:480px){
     .homeHero_swiper .cont_gendest_home .cont_col_desthome .desc_home_hero{
@@ -3585,5 +3592,8 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     }
     .s_gracias{
         padding: 70px 0; 
+    }
+    .s_nuestros_geeks {
+        padding: 60px 0;
     }
 }

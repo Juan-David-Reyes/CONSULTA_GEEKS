@@ -4593,6 +4593,13 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .header_geeks h1 {
+    font-size: 23px;
+  }
+  .s_nuestros_geeks {
+    background-size: cover;
+    padding: 100px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -4695,6 +4702,9 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td {
   }
   .s_gracias {
     padding: 70px 0;
+  }
+  .s_nuestros_geeks {
+    padding: 60px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
