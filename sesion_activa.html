@@ -53,10 +53,7 @@
                             <a href="sesion_activa.html">Encontrar Geeks</a>
                         </li>
                         <li>
-                            <a href="mensajes.html">Mensajes</a>
-                        </li>
-                        <li>
-                            <a href=""> <span class="fas fa-bell"></span> </a>
+                            <a href="mensajes.html">Mensajes  <span class="fas fa-bell"></span></a>
                         </li>
                         <li>
                             <a class="link_user_p">
@@ -89,9 +86,108 @@
     </header>
 
     <main>
+
+        <!--     FILTRO GEEKS DESPLEGABLE SOLO MOBILE -->
+    <form  action="" class="cont_filter_hero solo_mobile">
+        <div class="heading_txt">
+            Filtros <span class="close_filter_m fas fa-times"></span>
+        </div>
+        <div class="tags_filter">
+            <div class="tag_f">
+                Informatica <span class="fas fa-times"></span>
+            </div>
+            <div class="tag_f">
+                Virus <span class="fas fa-times"></span>
+            </div>
+            <div class="tag_f">
+                Presencial <span class="fas fa-times"></span>
+            </div>
+        </div>
+        <div class="campo_filtro">
+            <label for="">Escribe una palabra clave</label>
+            <input type="text" value="">
+        </div>
+        <div class="campo_filtro">
+            <label for="">Especialidad</label>
+            <input type="text" value="">
+        </div>
+        <div class="campo_filtro">
+            <label for="">Modalidad</label>
+            <select name="" id="">
+                <option value="" selected disabled> Seleccionar</option>
+                <option value="">Presencial</option>
+                <option value="">Virtual</option>
+            </select>
+        </div>
+        <div class="campo_filtro">
+            <label for="">Ubicación</label>
+            <select name="" id="">
+                <option value="" selected disabled> Seleccionar</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+            </select>
+        </div>
+        <button type="submit"> <i class="fas fa-search"></i> </button>
+        <div class="cont_btns_filter_mobile">
+            <button class="btn_outline" type="submit">Cancelar</button>
+            <button class="btn_fill" type="submit">Aplicar</button>
+        </div>
+    </form>
+
+<!--     ---------------------- -->
         <div class="spacer"></div>
+    
         <section class="s_sesion_activa">
             <div class="center">
+
+                <div class="cont_mobile_home_filter">
+                    <div class="filter_slide">
+                        Busca tu Geeks
+                    </div>
+                    <button class="type_submit" type="submit"> <i class="fas fa-search"></i> </button>
+                </div>
+                
+                <form  data-swiper-parallax="-300" action="" class="cont_filter_hero">
+                    <div class="campo_filtro">
+                        <label for="">Escribe una palabra clave</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="campo_filtro">
+                        <label for="">Especialidad</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="campo_filtro">
+                        <label for="">Modalidad</label>
+                        <select name="" id="">
+                            <option value="" selected disabled> Seleccionar</option>
+                            <option value="">Presencial</option>
+                            <option value="">Virtual</option>
+                        </select>
+                    </div>
+                    <div class="campo_filtro">
+                        <label for="">Ubicación</label>
+                        <select name="" id="">
+                            <option value="" selected disabled> Seleccionar</option>
+                            <option value="">Lima, Miraflores</option>
+                            <option value="">Lima, Miraflores</option>
+                            <option value="">Lima, Miraflores</option>
+                            <option value="">Lima, Miraflores</option>
+                            <option value="">Lima, Miraflores</option>
+                            <option value="">Lima, Miraflores</option>
+                        </select>
+                    </div>
+                    <button type="submit"> <i class="fas fa-search"></i> </button>
+                </form>
+                
+
+                <div class="cont_title_h">
+                    <h1>Técnicos más valorados</h1>
+
+                </div>
                 
                 <div class="geeks_cards">
 
@@ -126,7 +222,7 @@
                             <picture>
                                 <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
                             </picture>
-                            <div class=".cont_profile">
+                            <div class="cont_profile">
                                 <div class="name">
                                     Nombre Apellido
                                 </div>
@@ -152,7 +248,163 @@
                             <picture>
                                 <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
                             </picture>
-                            <div class=".cont_profile">
+                            <div class="cont_profile">
+                                <div class="name">
+                                    Nombre Apellido
+                                </div>
+                                <div class="profile">
+                                    Técnico de PC
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="desc_geek">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                        </div>
+                        <div class="rate_geek">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="card_geek">
+                        <div class="id_geek">
+                            <picture>
+                                <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                            </picture>
+                            <div class="cont_profile">
+                                <div class="name">
+                                    Nombre Apellido
+                                </div>
+                                <div class="profile">
+                                    Técnico de PC
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="desc_geek">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                        </div>
+                        <div class="rate_geek">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="card_geek">
+                        <div class="id_geek">
+                            <picture>
+                                <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                            </picture>
+                            <div class="cont_profile">
+                                <div class="name">
+                                    Nombre Apellido
+                                </div>
+                                <div class="profile">
+                                    Técnico de PC
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="desc_geek">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                        </div>
+                        <div class="rate_geek">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="card_geek">
+                        <div class="id_geek">
+                            <picture>
+                                <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                            </picture>
+                            <div class="cont_profile">
+                                <div class="name">
+                                    Nombre Apellido
+                                </div>
+                                <div class="profile">
+                                    Técnico de PC
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="desc_geek">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                        </div>
+                        <div class="rate_geek">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="card_geek">
+                        <div class="id_geek">
+                            <picture>
+                                <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                            </picture>
+                            <div class="cont_profile">
+                                <div class="name">
+                                    Nombre Apellido
+                                </div>
+                                <div class="profile">
+                                    Técnico de PC
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="desc_geek">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                        </div>
+                        <div class="rate_geek">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="card_geek">
+                        <div class="id_geek">
+                            <picture>
+                                <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                            </picture>
+                            <div class="cont_profile">
+                                <div class="name">
+                                    Nombre Apellido
+                                </div>
+                                <div class="profile">
+                                    Técnico de PC
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="desc_geek">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                        </div>
+                        <div class="rate_geek">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="card_geek">
+                        <div class="id_geek">
+                            <picture>
+                                <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                            </picture>
+                            <div class="cont_profile">
                                 <div class="name">
                                     Nombre Apellido
                                 </div>

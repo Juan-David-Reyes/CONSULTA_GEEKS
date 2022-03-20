@@ -36,6 +36,19 @@ $(document).ready(function(){
         $(this).toggleClass('active_nav');
     });
 
+/*     ESTILO DE LISTA O GRID SESION ACTIVA BUSQUEDA */
+
+    $('.visual_mode .fas.fa-list').click(function(){
+      $('.visual_mode span').removeClass('active_c');
+      $(this).addClass('active_c');
+      $('.geeks_cards').addClass('list-mode');
+    });
+    $('.visual_mode .fas.fa-th-large').click(function(){
+      $('.visual_mode span').removeClass('active_c');
+      $(this).addClass('active_c');
+      $('.geeks_cards').removeClass('list-mode');
+    });
+
     // BORDER FOOTER COLOR ARREGLO
 
     function colorFooter(){

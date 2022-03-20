@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULTA GEEK</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="header">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/diseno/logo_consulta_geeks.svg" width="135" height="48" alt="">
+                    </a>
+                </h1>
+                <nav class="navbar profile">
+                    <ul class="mobile">
+                        <li>
+                            <a class="link_user_p">
+                                <img width="40" height="40" src="images/diseno/01-home/foto_geek.png" alt=""> Carlos G.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Notificaciones <span class="fas fa-bell"></span> </a>
+                        </li>
+                        <li>
+                            <a href="mi_perfil.html">Mi Perfil<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Mensajes<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="historial.html">Historial de solicitudes<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="propuestas.html">Propuestas<span class="fas fa-chevron-right"></span> </a>
+                        </li>
+                        <li>
+                            <a href="index.html">Cerrar sesión<span class="fas fa-arrow-right"></span> </a>
+                        </li>
+                    </ul>
+                    <ul class="desktop">
+                        <li>
+                            <a href="sesion_activa.html">Encontrar Geeks</a>
+                        </li>
+                        <li>
+                            <a href="mensajes.html">Mensajes  <span class="fas fa-bell"></span></a>
+                        </li>
+                        <li>
+                            <a class="link_user_p">
+                                <img width="40" height="40" src="images/diseno/01-home/foto_geek.png" alt=""> Carlos G. <span class="fas fa-chevron-down"></span>
+                            </a>
+                            <div class="cont_submenu_user">
+                                <ul>
+                                    <li>
+                                        <a href="mi_perfil.html">Mi perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="historial.html">Historial de solicitud</a>
+                                    </li>
+                                    <li>
+                                        <a href="propuestas.html">Propuestas</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="button_nav">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!--     FILTRO GEEKS DESPLEGABLE SOLO MOBILE -->
+    <form  action="" class="cont_filter_hero solo_mobile">
+        <div class="heading_txt">
+            Filtros <span class="close_filter_m fas fa-times"></span>
+        </div>
+        <div class="tags_filter">
+            <div class="tag_f">
+                Informatica <span class="fas fa-times"></span>
+            </div>
+            <div class="tag_f">
+                Virus <span class="fas fa-times"></span>
+            </div>
+            <div class="tag_f">
+                Presencial <span class="fas fa-times"></span>
+            </div>
+        </div>
+        <div class="campo_filtro">
+            <label for="">Escribe una palabra clave</label>
+            <input type="text" value="">
+        </div>
+        <div class="campo_filtro">
+            <label for="">Especialidad</label>
+            <input type="text" value="">
+        </div>
+        <div class="campo_filtro">
+            <label for="">Modalidad</label>
+            <select name="" id="">
+                <option value="" selected disabled> Seleccionar</option>
+                <option value="">Presencial</option>
+                <option value="">Virtual</option>
+            </select>
+        </div>
+        <div class="campo_filtro">
+            <label for="">Ubicación</label>
+            <select name="" id="">
+                <option value="" selected disabled> Seleccionar</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+                <option value="">Lima, Miraflores</option>
+            </select>
+        </div>
+        <button type="submit"> <i class="fas fa-search"></i> </button>
+        <div class="cont_btns_filter_mobile">
+            <button class="btn_outline" type="submit">Cancelar</button>
+            <button class="btn_fill" type="submit">Aplicar</button>
+        </div>
+    </form>
+
+<!--     ---------------------- -->
+        <div class="spacer"></div>
+
+        <section class="s_sesion_activa busqueda">
+            <div class="sesion_filtro_b">
+                <div class="center">
+                    <div class="cont_mobile_home_filter">
+                        <div class="filter_slide">
+                            Busca tu Geeks
+                        </div>
+                        <button class="type_submit" type="submit"> <i class="fas fa-search"></i> </button>
+                    </div>
+                    
+                    <form  data-swiper-parallax="-300" action="" class="cont_filter_hero">
+                        <div class="campo_filtro">
+                            <label for="">Escribe una palabra clave</label>
+                            <input type="text" value="">
+                        </div>
+                        <div class="campo_filtro">
+                            <label for="">Especialidad</label>
+                            <input type="text" value="">
+                        </div>
+                        <div class="campo_filtro">
+                            <label for="">Modalidad</label>
+                            <select name="" id="">
+                                <option value="" selected disabled> Seleccionar</option>
+                                <option value="">Presencial</option>
+                                <option value="">Virtual</option>
+                            </select>
+                        </div>
+                        <div class="campo_filtro">
+                            <label for="">Ubicación</label>
+                            <select name="" id="">
+                                <option value="" selected disabled> Seleccionar</option>
+                                <option value="">Lima, Miraflores</option>
+                                <option value="">Lima, Miraflores</option>
+                                <option value="">Lima, Miraflores</option>
+                                <option value="">Lima, Miraflores</option>
+                                <option value="">Lima, Miraflores</option>
+                                <option value="">Lima, Miraflores</option>
+                            </select>
+                        </div>
+                        <button type="submit"> <i class="fas fa-search"></i> </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="tecnicos_cerca">
+
+                <div class="center">
+
+                    <div class="cont_title_h">
+                        <div>Más de 300 técnicos · Lima - Miraflores · Informatica · Virus</div>
+                        <div class="cont_mod_visual">
+                            <h1>Técnicos cerca de ti</h1>
+                            <div class="visual_mode">
+                                <span class="fas fa-list active_c"></span>
+                                <span class="fas fa-th-large"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="geeks_cards list-mode">
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                            <div class="card_geek">
+                                <div class="id_geek">
+                                    <picture>
+                                        <img src="images/diseno/01-home/foto_geek.png" width="88" height="88" alt="">
+                                    </picture>
+                                    <div class="cont_profile">
+                                        <div class="name">
+                                            Nombre Apellido
+                                        </div>
+                                        <div class="profile">
+                                            Técnico de PC
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="desc_geek">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tincidunt eget semper libero. Enim magna cras ac accumsan non.
+                                </div>
+                                <div class="rate_geek">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        <div class="cont_w100_btn flx_center paginador">
+                            <a href="" class="back_pag"><</a>
+                            <a href="" class="number_pag page_act">1</a>
+                            <a href="" class="number_pag">2</a>
+                            <a href="" class="number_pag">3</a> 
+                            <a href="" class="forward_pag">></a>
+                        </div>
+
+                        
+                </div>
+                    
+                <div class="col_maps_cerca">
+                    <picture>
+                        <img src="images/diseno/09-sesion-activa/maps.png" alt="">
+                    </picture>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    
+    <footer>
+
+        <!-- SCRIPTS -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- --------------- -->
+
+        <div class="center">
+            <div class="cont_footer">
+                <div class="col1">
+                    <picture>
+                        <img src="images/diseno/logo_consulta_geeks_dark.svg" width="113" height="40" alt="">
+                    </picture>
+                    <summary>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus non nulla aliquet luctus. Sed ullamcorper ex sed ipsum vehicula, non vulputate mauris finibus.
+                    </summary>
+                </div>
+                <div class="col2">
+                    <div class="col_nav">
+                        <h6 id="link_f1">ConsultaGeeks</h6>
+                        <nav class="nav_consultaG">
+                            <ul>
+                                <li>
+                                    <a href="">¿Quiénes somos?</a>
+                                </li>
+                                <li>
+                                    <a href="">Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="">Nuestros Geeks</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col_nav">
+                        <h6 id="link_f2">Legal</h6>
+                        <nav class="nav_consultaG">
+                            <ul>
+                                <li>
+                                    <a href="">Políticas de privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="">Políticas de ConsultaGeeks</a>
+                                </li>
+                                <li>
+                                    <a href="">Cookies</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col_nav">
+                        <h6 id="link_f3">Contacto</h6>
+                        <div class="cont_footer_contacto">
+                            <ul>
+                                <li>
+                                    Teléfono:<a href="tel:(51) 963 852 765">(51) 963 852 765</a>
+                                </li>
+                                <li>
+                                    Email:<a href="mailto:info@consultageeks.com">info@consultageeks.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont_footer_redes">
+                            <h6>Siguenos</h6>
+                            <div class="links_redes">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                Consulta Geeks © 2020 - Todos los derechos reservados.
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
