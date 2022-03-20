@@ -51,12 +51,32 @@ $(document).ready(function(){
 
     // HISTORIAL SOLICITUD MOBILE ITEMS
 
+    $('.cont_w100_btn .modal_rechazar').click(function(){
+      $('.cont_modal_propuesta').hide();
+      $('.cont_modal_propuesta.cont_propuesta_rechazar').show();
+    });
+
+    // CAMBIO MODAL RECHAZAR
+
     $('.item_h_estado').click(function(){
       $('.item_h_estado').removeClass('active_state');
       $('.slide_down_info').slideUp();
       $(this).toggleClass('active_state');
       $(this).next('.slide_down_info').slideToggle();
     });
+
+    // MODAL PROPUESTA
+
+    $('a.ver_propuesta').click(function(){
+      $('.s_modal_propuesta').addClass('modal_act_propuesta');
+      $('body').addClass('hiddeScroll');
+    });
+
+    $('.cont_modal_propuesta .tit_modal .fa-times').click(function(){
+      $('.s_modal_propuesta').removeClass('modal_act_propuesta');
+      $('body').removeClass('hiddeScroll');
+    });
+
 
     // BORDER FOOTER COLOR ARREGLO
 

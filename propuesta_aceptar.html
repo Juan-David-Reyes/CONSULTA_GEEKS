@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -92,15 +93,18 @@
         <div class="spacer"></div>
         <section class="s_propuesta_aceptar">
             <div class="center">
-                <h1>Realizar depósito de garantia</h1>
                 <div class="cont_gen_aceptar">
+                    <h1>Realizar depósito de garantia</h1>
                     <div class="cont_perfil_aceptar">
-                        <picture>
-                            <img width="120" height="120" src="" alt="">
-                        </picture>
-                        <div class="datos_perfil">
-                            <h4>Nombre Apellido</h4> <span>25/08/2010</span>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sagittis cras netus turpis eget. Tincidunt turpis nunc mauris massa tempor blandit ullamcorper lectus.</div>
+                        <div class="header_info_card_p">
+                            <picture>
+                                <img width="120" height="120" src="images/diseno/04-mi-perfil/foto-usuario.png" alt="">
+                            </picture>
+                            <div class="datos_perfil">
+                                <h4>Nombre Apellido</h4>
+                                <span>25/08/2010</span>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sagittis cras netus turpis eget. Tincidunt turpis nunc mauris massa tempor blandit ullamcorper lectus.</div>
+                            </div>
                         </div>
                         <div class="cont_data_perfil">
                             <table id="data_perfil_aceptar" class="compact order-column table-bordered" style="width: 100%;">
@@ -133,9 +137,9 @@
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class="cont_w100_btn flx_right">
-                    <a href="propuesta_aceptar.html" class="btn_fill">Hacer depósito</a>
+                    <div class="cont_w100_btn flx_right">
+                        <a href="propuesta_aceptar.html" class="btn_fill">Hacer depósito</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,8 +150,20 @@
         <!-- SCRIPTS -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#data_perfil_aceptar').DataTable({
+                    "scrollX": true,
+                    "paging":   false,
+                    "ordering": false,
+                    "info":     false
+                });
+            } );
+        </script>
 
         <!-- --------------- -->
 
