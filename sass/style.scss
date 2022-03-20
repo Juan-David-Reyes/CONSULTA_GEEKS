@@ -776,6 +776,7 @@ div.dataTables_wrapper {
     z-index: 5;
     h1{
         text-align: left;
+        color: var(--negro-100);
     }
 }
 .geeks_cards{
@@ -3229,6 +3230,9 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
         overflow-x: scroll;
         padding: 0 20px;
     }
+    .s_sobre_nosotros picture img{
+        object-fit: cover;
+    }
 }
 @media screen and (max-width:768px){
     footer .col_nav h6{
@@ -3312,10 +3316,29 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     .s_sobre_nosotros{
         max-height: initial;
         height: auto;
+        border-radius: 0;
+        padding: 60px 0;
     }
+    .cont_tit2_s.al_left h6{
+        font-size: 12px;
+    }
+    .cont_tit2_s.al_left h3{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .cont_gen_n_enfoque .col_mv h4{
+        font-size: 24px;
+        font-weight: 700
+    }
+    .cont_tit2_s.al_left .desc_tit2{
+        font-size: 14px;
+    }
+    .cont_gen_quehacemos{
+        grid-template-columns: 1fr;
+    }
+
     .cont_sobre_nosotros{
         grid-template-columns: minmax(auto, 312px) 2fr;
-
     }
     .swiperComoFunciona{
         .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
@@ -3488,10 +3511,51 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     }
     .header_geeks h1{
         font-size: 23px;
+        text-align: center;
     }
     .s_nuestros_geeks{
         background-size: cover;
         padding: 100px 0;
+    }
+    .cont_gen_galeria_n {
+        grid-template-columns: 1fr;
+    }
+    .gal_img2, .gal_img3 {
+        display: none;
+    }
+    .cont_gen_galeria_n .col1_picture picture, .cont_gen_galeria_n .col2_picture picture{
+        width: 100%;
+    }
+    .cont_gen_galeria_n .col2_picture picture{
+        max-height: 229px;
+    }
+    .cont_mision_vision{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .cont_gen_n_experiencia .datos_experiencia{
+        grid-template-columns: 1fr;
+    }
+    .cont_gen_preguntas{
+        gap: 50px;
+        grid-template-columns: 1fr;
+    }
+    .s_preguntas .cont_tit2_s.al_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .s_preguntas .cont_tit2_s.al_left h3{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cont_gen_preguntas .cont_desc_hacemos{
+        text-align: centerc;
+    }
+    .cont_gen_preguntas picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 @media screen and (max-width:480px){
