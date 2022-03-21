@@ -863,6 +863,7 @@ div.dataTables_wrapper {
         gap: 5px;
         span {
             font-size: 14px;
+            cursor: pointer;
         }
     }
 }
@@ -2975,6 +2976,7 @@ input[type="checkbox"] {
     inset: 0;
     background: #21263aa4;
     z-index: 100;
+    align-items: center;
     &.modal_act_propuesta {
         display: flex;
         align-items: center;
@@ -3605,9 +3607,103 @@ picture.p_sms{
     }
 }
 
+.s_modal_propuesta.modal_detalle{
+    .cont_modal_propuesta{
+        height: 90vh;
+    }
+    .desc_modal{
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        .descripcion_gen.estado{
+            
+            &.finalizado{
+                div{
+                    background: rgba(35, 217, 183, 0.1);
+                    border: 1px solid #23D9B7;
+                    box-sizing: border-box;
+                    border-radius: 36px;
+                    padding: 4px 8px;
+                    width: max-content;
+                    color: #23D9B7;
+                    font-size: 11px;
+                }
+            }
+            &.progreso{
+                div{
+                    background: rgba(226, 166, 11, 0.1);
+                    border: 1px solid #E2A60B;
+                    box-sizing: border-box;
+                    border-radius: 36px;
+                    padding: 4px 8px;
+                    width: max-content;
+                    color: #E2A60B;
+                    font-size: 11px;
+                }
+            }
+            &.rechazado{
+                div{
+                    background: rgba(249, 42, 92, 0.1);
+                    border: 1px solid #F92A5C;
+                    box-sizing: border-box;
+                    border-radius: 36px;
+                    padding: 4px 8px;
+                    width: max-content;
+                    color: #F92A5C;
+                    font-size: 11px;
+                }
+            }
+            &.mediacion{
+                div{
+                    background: rgba(20, 120, 220, 0.1);
+                    border: 1px solid #1478DC;
+                    box-sizing: border-box;
+                    border-radius: 36px;
+                    padding: 4px 8px;
+                    width: max-content;
+                    color: #1478DC;
+                    font-size: 11px;
+                }
+            }
+            
+        }
+    }
+}
 
+.al_left{
+    text-align: left;
+}
+.tit_th{
+    font-weight: 700;
+    color:var(--negro-100);
+}
+.tit_desc_factura{
+    margin: 0 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 16px 16px 0 0;
+    background: #FAFAFA;
+    h4{
+        margin: 20px 0 0;
+        padding: 10px 0;
+        font-size: 14px;
+        color: var(--negro-100);
+    }
+}
 
-
+.cont_desc_comentario_tec{
+    padding: 20px 30px;
+    h4{
+        margin-top: 0;
+        font-size: 14px;
+        color: var(--negro-100);
+    }
+    div{
+        line-height: 168%;
+    }
+}
+.cont_gen_scroll_detalle{
+    overflow-y: scroll;
+    height: 80vh;
+}
 
 
 
@@ -3723,15 +3819,21 @@ picture.p_sms{
     .tecnicos_cerca {
         grid-template-columns: 1fr;
     }
-    .cont_data_desc {
+    .cont_data_desc, .cont_data_desc_pre {
         overflow-x: scroll;
-        padding: 0 20px;
+        padding: 0 30px;
     }
     .s_sobre_nosotros picture img {
         object-fit: cover;
     }
     .cont_modal_post_tecnico {
         width: 90%;
+    }
+    .s_modal_propuesta.modal_detalle .cont_modal_propuesta{
+        height: 100vh;
+    }
+    .cont_gen_scroll_detalle{
+        height: 91vh;
     }
 }
 @media screen and (max-width: 768px) {

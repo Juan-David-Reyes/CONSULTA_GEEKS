@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -94,91 +95,102 @@
         <!-- MODAL DETALLE -->
         
 
-
-
-
-        <section class="s_modal_propuesta modal_detalle" style="display:block;">
+        <section class="s_modal_propuesta modal_detalle" style="display:flex;">
             <div class="center">
                 <div class="cont_modal_propuesta">
                     <div class="tit_modal">
                         <span class="fas fa-times"></span> Detalles de solicitud
                     </div>
-                    <div class="desc_modal">
-                        <div class="descripcion_gen">
-                            <h5>Descripción General</h5>
-                            <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.</div>
+                    <div class="cont_gen_scroll_detalle">
+                        <div class="desc_modal">
+                            <div class="descripcion_gen">
+                                <h5>Descripción General</h5>
+                                <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh.</div>
+                            </div>
+                            <div class="descripcion_gen">
+                                <h5>Técnico</h5>
+                                <div class="">Raul Carpio</div>
+                            </div>
+                            <div class="descripcion_gen estado finalizado">
+                                <h5>ESTADO</h5>
+                                <div class="">FINALIZADO</div>
+                            </div>
+                            <div class="descripcion_gen">
+                                <h5>fecha</h5>
+                                <div class="">06/11/2020</div>
+                            </div>
                         </div>
-                        <div class="descripcion_gen">
-                            <h5>Técnico</h5>
-                            <div class="">Raul Carpio</div>
+                        <div class="cont_data_desc_pre">
+                            <table class="display compact order-column table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="al_left tit_th">Maquina</th>
+                                        <th class="al_left tit_th">Marca</th>
+                                        <th class="al_left tit_th">Procesador</th>
+                                        <th class="al_left tit_th">Memoria</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="al_left">PC Nueva</td>
+                                        <td class="al_left">Lenovo</td>
+                                        <td class="al_left">Intel Core i5 - 3.0 GH</td>
+                                        <td class="al_left">8GB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="descripcion_gen estado">
-                            <h5>ESTADO</h5>
-                            <div class="">FINALIZADO</div>
+    
+                        <div class="tit_desc_factura">
+                            <h4>Descripción factura</h4>
                         </div>
-                        <div class="descripcion_gen">
-                            <h5>fecha</h5>
-                            <div class="">06/11/2020</div>
+                        
+                        <div class="cont_data_desc">
+                            <table class="display compact order-column table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="al_left tit_th">DESCRIPCIÓN</th>
+                                        <th class="al_left tit_th">CANTIDAD</th>
+                                        <th class="al_left tit_th">PRECIO UND</th>
+                                        <th class="al_left tit_th">PRECIO FINAL</th>
+    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="al_left">Antivirus</td>
+                                        <td class="al_left">1</td>
+                                        <td class="al_left">$20</td>
+                                        <td class="al_left">$20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="al_left">Office</td>
+                                        <td class="al_left">1</td>
+                                        <td class="al_left">$20</td>
+                                        <td class="al_left">$20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="al_left">Disco duro</td>
+                                        <td class="al_left">1</td>
+                                        <td class="al_left">$20</td>
+                                        <td class="al_left">$20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="al_left">-</td>
+                                        <td class="al_left">-</td>
+                                        <td class="al_left">PRECIO (soles)</td>
+                                        <td class="al_left">$122</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="cont_data_desc">
-                        <table class="display compact order-column table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>DESCRIPCIÓN</th>
-                                    <th>CANTIDAD</th>
-                                    <th>PRECIO UND</th>
-                                    <th>PRECIO FINAL</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Antivirus</td>
-                                    <td>1</td>
-                                    <td>$20</td>
-                                    <td>$20</td>
-                                </tr>
-                                <tr>
-                                    <td>Office</td>
-                                    <td>1</td>
-                                    <td>$20</td>
-                                    <td>$20</td>
-                                </tr>
-                                <tr>
-                                    <td>Disco duro</td>
-                                    <td>1</td>
-                                    <td>$20</td>
-                                    <td>$20</td>
-                                </tr>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>PRECIO (soles)</td>
-                                    <td>$122</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="cont_w100_btn flx_right">
-                        <a class="btn_outline modal_rechazar">Rechazar</a>
-                        <a href="propuesta_aceptar.html" class="btn_fill">Aceptar</a>
+                        <div class="cont_desc_comentario_tec">
+                            <h4>COMENTARIO DEL TÉCNICO</h4>
+                            <div>Sit amet, consectetur adipiscing elit. Id faucibus vitae, vestibulum quis. Pellentesque mauris tellus sit duis morbi nisl. Laoreet purus a donec vehicula neque ac. Dolor faucibus eu adipiscing enim. Id quisque pretium lorem tortor sagittis lectus. Semper lacus, pulvinar in donec. Sed tincidunt.</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="cont_modal_propuesta cont_propuesta_rechazar" style="display: none;">
-                    <div class="tit_modal">
-                        <span class="fas fa-times"></span> Detalles de propuesta
-                    </div>
-                    <div class="desc_modal">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ut massa lectus eu nibh. Aliquam sed leo dictumst sit facilisis magna tincidunt in. Vulputate vel malesuada convallis sed purus tempus habitasse nunc.
-                    </div>
-                    <textarea name="" id="" cols="95" rows="8" placeholder="Mensaje"></textarea>
-                    <div class="cont_w100_btn flx_right">
-                        <a href="" class="btn_leer_mas">Cancelar</a>
-                        <a href="" class="btn_fill">Rechazar propuesta</a>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -452,8 +464,20 @@
         <!-- SCRIPTS -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('table.display').DataTable({
+                    "scrollX": true,
+                    "paging":   false,
+                    "ordering": false,
+                    "info":     false
+                });
+            } );
+        </script>
 
         <!-- --------------- -->
 

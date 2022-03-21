@@ -1104,6 +1104,7 @@ div.dataTables_wrapper {
 
 .card_geek .rate_geek span {
   font-size: 14px;
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -3945,6 +3946,9 @@ input[type="checkbox"]:checked {
   inset: 0;
   background: #21263aa4;
   z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .s_modal_propuesta.modal_act_propuesta {
@@ -4763,6 +4767,115 @@ picture.p_sms img {
      object-fit: cover;
 }
 
+.s_modal_propuesta.modal_detalle .cont_modal_propuesta {
+  height: 90vh;
+}
+
+.s_modal_propuesta.modal_detalle .desc_modal {
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.s_modal_propuesta.modal_detalle .desc_modal .descripcion_gen.estado.finalizado div {
+  background: rgba(35, 217, 183, 0.1);
+  border: 1px solid #23D9B7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 36px;
+  padding: 4px 8px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #23D9B7;
+  font-size: 11px;
+}
+
+.s_modal_propuesta.modal_detalle .desc_modal .descripcion_gen.estado.progreso div {
+  background: rgba(226, 166, 11, 0.1);
+  border: 1px solid #E2A60B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 36px;
+  padding: 4px 8px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #E2A60B;
+  font-size: 11px;
+}
+
+.s_modal_propuesta.modal_detalle .desc_modal .descripcion_gen.estado.rechazado div {
+  background: rgba(249, 42, 92, 0.1);
+  border: 1px solid #F92A5C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 36px;
+  padding: 4px 8px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #F92A5C;
+  font-size: 11px;
+}
+
+.s_modal_propuesta.modal_detalle .desc_modal .descripcion_gen.estado.mediacion div {
+  background: rgba(20, 120, 220, 0.1);
+  border: 1px solid #1478DC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 36px;
+  padding: 4px 8px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #1478DC;
+  font-size: 11px;
+}
+
+.al_left {
+  text-align: left;
+}
+
+.tit_th {
+  font-weight: 700;
+  color: var(--negro-100);
+}
+
+.tit_desc_factura {
+  margin: 0 30px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px 16px 0 0;
+  background: #FAFAFA;
+}
+
+.tit_desc_factura h4 {
+  margin: 20px 0 0;
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--negro-100);
+}
+
+.cont_desc_comentario_tec {
+  padding: 20px 30px;
+}
+
+.cont_desc_comentario_tec h4 {
+  margin-top: 0;
+  font-size: 14px;
+  color: var(--negro-100);
+}
+
+.cont_desc_comentario_tec div {
+  line-height: 168%;
+}
+
+.cont_gen_scroll_detalle {
+  overflow-y: scroll;
+  height: 80vh;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
@@ -4910,9 +5023,9 @@ picture.p_sms img {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .cont_data_desc {
+  .cont_data_desc, .cont_data_desc_pre {
     overflow-x: scroll;
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .s_sobre_nosotros picture img {
     -o-object-fit: cover;
@@ -4920,6 +5033,12 @@ picture.p_sms img {
   }
   .cont_modal_post_tecnico {
     width: 90%;
+  }
+  .s_modal_propuesta.modal_detalle .cont_modal_propuesta {
+    height: 100vh;
+  }
+  .cont_gen_scroll_detalle {
+    height: 91vh;
   }
 }
 
