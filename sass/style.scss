@@ -3283,8 +3283,34 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     text-align: center;
 }
 
+.modal_comentario{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    .cont_gen_textos_comment{
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .rate_calificacion{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid var(--gris-20);
+        border-radius: 8px;
+        padding: 20px;
+        box-sizing: border-box;
 
+    }
+}
 
+.pic_in_mobile{
+    display: none;
+}
 
 
 
@@ -3794,6 +3820,53 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     }
     .header_post_tec{
         grid-template-columns: 90px 1fr;
+    }
+    .cont_desc_calificacion{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .rate_calificacion span{
+        font-size: 14px
+    } 
+    .s_modal_propuesta .center{
+        padding: 0;
+    }
+    .s_modal_propuesta .cont_modal_propuesta{
+        border-radius: 0;
+        height: 100vh;
+    }
+    .s_modal_propuesta .cont_modal_propuesta .tit_modal{
+        font-size: 16px
+    }
+    .cont_propuestas .cont_cards_propuestas .card_propuesta h4{
+        font-size: 16px;
+    }
+    .cont_propuestas .cont_cards_propuestas .card_propuesta div{
+        line-height: 19px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .cont_propuestas .cont_cards_propuestas .card_propuesta{
+        grid-template-columns: 1fr;
+        position: relative;
+        padding: 20px 20px 60px;
+    }
+    .pic_in_mobile{
+        display: inline-block;
+    }
+    .cont_propuestas .cont_cards_propuestas .card_propuesta > picture{
+        display: none;
+    }
+    .cont_propuestas .header_info_card_p .tt{
+        display: grid;
+        grid-template-columns: 129px 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+    .cont_propuestas .header_info_card_p .cont_btn{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
     }
 }
 @media screen and (max-width:480px){
