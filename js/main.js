@@ -56,6 +56,20 @@ $(document).ready(function(){
       $('.cont_modal_propuesta.cont_propuesta_rechazar').show();
     });
 
+    // MODAL DETALLE TECNICO
+
+    $('.geeks_cards .card_geek').click(function(){
+      $('body').addClass('hiddeScroll');
+      $('.bg_modals').fadeIn();
+      $('.cont_modal_post_tecnico').addClass('activo');
+    });
+    $('.cont_modal_post_tecnico .header_close span').click(function(){
+      $('body').removeClass('hiddeScroll');
+      $('.bg_modals').fadeOut();
+      $('.cont_modal_post_tecnico').removeClass('activo');
+    });
+    
+
     // CAMBIO MODAL RECHAZAR
 
     $('.item_h_estado').click(function(){

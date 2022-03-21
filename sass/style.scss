@@ -3111,6 +3111,187 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     margin: 20px 0;
     overflow-x: scroll;
 }
+.bg_modals{
+    display: none;
+    background: var(--negro-100);
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.cont_modal_post_tecnico{
+    transform: translateX(100%);
+    transition: 300ms ease-out;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 100;
+    background: #FAFAFA;
+    &.activo{
+        transform: translateX(0);
+    }
+    .header_close{
+        background: #FFFFFF;
+        padding: 16px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #EEEEEE;
+        span{
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .cont_post_tecnico{
+        padding: 60px;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        height: 100vh;
+        .white_post_tec{
+            background: #FFFFFF;
+            border: 1px solid #ECECEC;
+            box-sizing: border-box;
+            border-radius: 16px;
+        }
+
+    }
+}
+.header_post_tec{
+    display: grid;
+    grid-template-columns: 90px 1fr 200px;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ECECEC;
+    picture{
+       width: 88px;
+       height: 88px;
+       border-radius: 8px;
+       overflow: hidden;
+       img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+    }
+    h4{
+        margin-top: 0;
+        margin-bottom: 10px;
+        color:var(--negro-100);
+        font-size: 22px;
+    }
+    .lugar{
+        margin-bottom: 6px;
+        span{
+            margin-right: 6px;
+        }
+    }
+    .btn_fill{
+        text-align: center;
+        justify-content: center;
+    }
+}
+.cont_info_general{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    aside{
+        padding: 0 20px;
+        box-sizing: border-box;
+        h5{
+            font-size: 14px;
+            color: var(--negro-100);
+        }
+    }
+    .col_info_gen_tec{
+        border-left: 1px solid #ECECEC;
+        padding: 0 20px;
+        box-sizing: border-box;
+        h4{
+            color: var(--negro-100);
+            font-size: 24px;
+        }
+        .desc_tec_1{
+            color: var(--gris-100);
+            line-height: 24px;
+        }
+        > .col_section_txt_tec{
+            padding: 0 0 20px;
+            box-sizing: border-box;
+            border-bottom:1px solid #ECECEC;
+            line-height: 24px;
+            &:nth-child(2){
+                padding-bottom: 0;
+            }
+            &.habilidades{
+                border-bottom:0; 
+            }
+            
+        }
+        h5{
+            color: var(--negro-100);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .colum_rate_info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            > span{
+                font-weight: 700;   
+            }
+        }
+        .subsection_trabajos{
+            border-bottom:1px solid #ECECEC;
+            padding-bottom: 20px;
+            .col_section_txt_tec{
+                line-height: 24px; 
+            }
+            .price_tecnico{
+                margin-top: 20px;
+                font-weight: 700;
+            }
+        }
+        .paginador{
+            border-bottom:1px solid #ECECEC;
+            padding-bottom: 40px;
+        }
+        .colum_rate_info{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.tag_asist{
+    span{
+        background: #FAFAFA;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-size: 12px;
+        margin-right: 10px;
+        float: left;
+        margin-bottom: 5px;
+    }
+}
+
+.con_for_mobile_bottom{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 // RESPONSIVE
@@ -3232,6 +3413,9 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
     }
     .s_sobre_nosotros picture img{
         object-fit: cover;
+    }
+    .cont_modal_post_tecnico{
+        width: 90%;
     }
 }
 @media screen and (max-width:768px){
@@ -3556,6 +3740,60 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td{
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+    .cont_modal_post_tecnico{
+        width: 100%;
+    }
+    .cont_modal_post_tecnico .cont_post_tecnico{
+        padding: 0;
+        height: 80vh;
+    }
+    .cont_modal_post_tecnico .cont_post_tecnico .white_post_tec{
+        border-radius: 0;
+    }
+    .cont_info_general{
+        grid-template-columns: 1fr;
+    }
+    .cont_info_general .col_info_gen_tec{
+        border-left: 0;
+    }
+    .cont_info_general aside{
+        border-bottom: 1px solid #ECECEC;
+        padding: 0 20px 20px
+    }
+    .cont_info_general .col_info_gen_tec h4{
+        font-size: 20px;
+    }
+    .cont_info_general .col_info_gen_tec .desc_tec_1{
+        font-size: 14px
+    }
+    .cont_info_general .col_info_gen_tec .subsection_trabajos .col_section_txt_tec div{
+        font-size: 14px;
+    }
+    .cont_info_general .col_info_gen_tec .paginador{
+        justify-content: center!important;
+    }
+    .con_for_mobile_bottom{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 18px 20px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        .btn_fill{
+            width: 260px;
+            height: 56px;
+            letter-spacing: 0.08em;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .header_post_tec{
+        grid-template-columns: 90px 1fr;
     }
 }
 @media screen and (max-width:480px){

@@ -4140,6 +4140,230 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td {
   overflow-x: scroll;
 }
 
+.bg_modals {
+  display: none;
+  background: var(--negro-100);
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.cont_modal_post_tecnico {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 100;
+  background: #FAFAFA;
+}
+
+.cont_modal_post_tecnico.activo {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.cont_modal_post_tecnico .header_close {
+  background: #FFFFFF;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.cont_modal_post_tecnico .header_close span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cont_modal_post_tecnico .cont_post_tecnico {
+  padding: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.cont_modal_post_tecnico .cont_post_tecnico .white_post_tec {
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.header_post_tec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90px 1fr 200px;
+      grid-template-columns: 90px 1fr 200px;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header_post_tec picture {
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header_post_tec picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header_post_tec h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--negro-100);
+  font-size: 22px;
+}
+
+.header_post_tec .lugar {
+  margin-bottom: 6px;
+}
+
+.header_post_tec .lugar span {
+  margin-right: 6px;
+}
+
+.header_post_tec .btn_fill {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cont_info_general {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+.cont_info_general aside {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_info_general aside h5 {
+  font-size: 14px;
+  color: var(--negro-100);
+}
+
+.cont_info_general .col_info_gen_tec {
+  border-left: 1px solid #ECECEC;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_info_general .col_info_gen_tec h4 {
+  color: var(--negro-100);
+  font-size: 24px;
+}
+
+.cont_info_general .col_info_gen_tec .desc_tec_1 {
+  color: var(--gris-100);
+  line-height: 24px;
+}
+
+.cont_info_general .col_info_gen_tec > .col_section_txt_tec {
+  padding: 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ECECEC;
+  line-height: 24px;
+}
+
+.cont_info_general .col_info_gen_tec > .col_section_txt_tec:nth-child(2) {
+  padding-bottom: 0;
+}
+
+.cont_info_general .col_info_gen_tec > .col_section_txt_tec.habilidades {
+  border-bottom: 0;
+}
+
+.cont_info_general .col_info_gen_tec h5 {
+  color: var(--negro-100);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cont_info_general .col_info_gen_tec .colum_rate_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.cont_info_general .col_info_gen_tec .colum_rate_info > span {
+  font-weight: 700;
+}
+
+.cont_info_general .col_info_gen_tec .subsection_trabajos {
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 20px;
+}
+
+.cont_info_general .col_info_gen_tec .subsection_trabajos .col_section_txt_tec {
+  line-height: 24px;
+}
+
+.cont_info_general .col_info_gen_tec .subsection_trabajos .price_tecnico {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.cont_info_general .col_info_gen_tec .paginador {
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 40px;
+}
+
+.cont_info_general .col_info_gen_tec .colum_rate_info {
+  margin-bottom: 10px;
+}
+
+.tag_asist span {
+  background: #FAFAFA;
+  border: 1px solid #ECECEC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-right: 10px;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.con_for_mobile_bottom {
+  text-align: center;
+}
+
 @media screen and (max-width: 1050px) {
   .navbar {
     -webkit-transform: translateX(100%);
@@ -4294,6 +4518,9 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td {
   .s_sobre_nosotros picture img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .cont_modal_post_tecnico {
+    width: 90%;
   }
 }
 
@@ -4677,6 +4904,74 @@ table.dataTable.compact tbody th, table.dataTable.compact tbody td {
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .cont_modal_post_tecnico {
+    width: 100%;
+  }
+  .cont_modal_post_tecnico .cont_post_tecnico {
+    padding: 0;
+    height: 80vh;
+  }
+  .cont_modal_post_tecnico .cont_post_tecnico .white_post_tec {
+    border-radius: 0;
+  }
+  .cont_info_general {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .cont_info_general .col_info_gen_tec {
+    border-left: 0;
+  }
+  .cont_info_general aside {
+    border-bottom: 1px solid #ECECEC;
+    padding: 0 20px 20px;
+  }
+  .cont_info_general .col_info_gen_tec h4 {
+    font-size: 20px;
+  }
+  .cont_info_general .col_info_gen_tec .desc_tec_1 {
+    font-size: 14px;
+  }
+  .cont_info_general .col_info_gen_tec .subsection_trabajos .col_section_txt_tec div {
+    font-size: 14px;
+  }
+  .cont_info_general .col_info_gen_tec .paginador {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .con_for_mobile_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .con_for_mobile_bottom .btn_fill {
+    width: 260px;
+    height: 56px;
+    letter-spacing: 0.08em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_post_tec {
+    -ms-grid-columns: 90px 1fr;
+        grid-template-columns: 90px 1fr;
   }
 }
 
