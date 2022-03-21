@@ -435,7 +435,7 @@ footer.footer2 h6 {
 
 footer.no_footer {
   background-color: #FAFAFA;
-  padding: 20px 60px 30px;
+  padding: 0;
 }
 
 .link {
@@ -852,7 +852,7 @@ div.dataTables_wrapper {
 }
 
 .swiperComoFunciona {
-  padding: 40px;
+  padding: 40px 40px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 1312px;
@@ -1746,7 +1746,7 @@ input[type="checkbox"]:checked {
 
 .swiperTestimonios {
   min-height: 440px;
-  padding: 0 20px;
+  padding: 0 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -4607,10 +4607,13 @@ table.dataTable.compact tbody td {
 }
 
 .cont_gen_mensajes .col_sms_chat .content_chat .container_chat_textos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
   height: 100%;
   overflow-y: scroll;
@@ -4632,6 +4635,8 @@ table.dataTable.compact tbody td {
 
 .cont_gen_mensajes .col_sms_chat .content_chat .container_chat_textos .cont_txt_chat.right {
   justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   text-align: right;
   border-radius: 16px 16px 0 16px;
 }
@@ -4874,6 +4879,20 @@ picture.p_sms img {
 .cont_gen_scroll_detalle {
   overflow-y: scroll;
   height: 80vh;
+}
+
+.back_buton_sms {
+  display: none;
+}
+
+.back_buton_sms span {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.txt_300 {
+  max-width: 300px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -5164,12 +5183,6 @@ picture.p_sms img {
   .cont_sobre_nosotros {
     -ms-grid-columns: minmax(auto, 312px) 2fr;
         grid-template-columns: minmax(auto, 312px) 2fr;
-  }
-  .swiperComoFunciona .swiper-horizontal > .swiper-pagination-bullets,
-  .swiperComoFunciona .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiperComoFunciona .swiper-pagination-custom,
-  .swiperComoFunciona .swiper-pagination-fraction {
-    display: none;
   }
   .cont_sobre_nosotros {
     -ms-grid-columns: 1fr;
@@ -5571,6 +5584,19 @@ div {
   .cont_gen_mensajes .col_sms_chat .content_chat {
     height: 76vh;
   }
+  .back_buton_sms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cont_gen_mensajes .col_sms_chat .header_chat {
+    -ms-grid-columns: 30px 50px 1fr 90px;
+        grid-template-columns: 30px 50px 1fr 90px;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -5647,7 +5673,7 @@ div {
     padding: 0 20px 30px;
   }
   .swiperComoFunciona {
-    padding: 20px;
+    padding: 20px 30px 60px;
   }
   .s_banner_empieza .cont_banner_empieza picture::before {
     right: 0;
@@ -5679,6 +5705,9 @@ div {
   }
   .s_nuestros_geeks {
     padding: 60px 0;
+  }
+  .cont_gen_mensajes .col_sms_chat .content_chat .container_chat_textos .cont_txt_chat {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

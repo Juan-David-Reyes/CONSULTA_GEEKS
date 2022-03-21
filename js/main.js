@@ -159,6 +159,7 @@ $(document).ready(function(){
           slidesPerView: 1,   
           pagination: {
             el: ".swiperTestimonios .swiper-pagination",
+            clickable: true,
           },
           breakpoints: {
             // when window width is >= 320px
