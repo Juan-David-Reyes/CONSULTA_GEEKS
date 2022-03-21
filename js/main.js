@@ -56,6 +56,12 @@ $(document).ready(function(){
       $('.cont_modal_propuesta.cont_propuesta_rechazar').show();
     });
 
+    // SUBMENU MENSAJES CHAT
+
+    $('.menu_sms_chat').click(function(){
+      $('.cont_submenu_chat').slideToggle();
+    });
+
     // MODAL DETALLE TECNICO
 
     $('.geeks_cards .card_geek').click(function(){
